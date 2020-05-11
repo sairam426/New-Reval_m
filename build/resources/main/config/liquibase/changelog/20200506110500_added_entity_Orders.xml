@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+        <property name="autoIncrement" value="true"/>
+
+    <!--
+        Added the entity Orders.
+    -->
+    <changeSet id="20200506110500-1" author="jhipster">
+        <createTable tableName="orders">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="ord_number" type="varchar(30)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_stage_cd" type="varchar(30)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_org_order_status_cd" type="varchar(30)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_cmp_order_status_cd" type="varchar(30)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_pro_order_status_cd" type="varchar(30)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_cmp_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_brn_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_pro_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_product_code" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_original_value_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_parent_tracking_nbr" type="varchar(50)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_user_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_order_dt" type="date">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_rush_request_due_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_org_instructions" type="varchar(240)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_org_other_instructions" type="varchar(240)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_multi_order_ind" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_org_duedate" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_pro_duedate" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_ucdp_data_fnma_submit_to_ucdp_ind" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_ucdp_data_fnma_servicer_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_ucdp_data_fhlmc_submit_to_ucdp_ind" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_ucdp_data_fhlmc_identification_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_ucdp_data_ucdp_bussiness_unit_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_ucdp_sd_fnama_document_id" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_ucdp_sd_fnma_submission_status_id" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_ucdp_sd_fhlmc_document_file_cd" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_ucdp_sd_ead_submission_status_cd" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_ucdp_final_submission_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ordloan_old_loan_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_program" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_purpose" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_type" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_loan_qualifying_value_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_loan_sales_price_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_loan_borrower_last_name" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_borrower_first_name" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_borrower_middle_name" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_borrower_is_co_borrower_ind" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_loan_fha_case_nbr" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_deed_restriction_ind" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_loan_estimated_close_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_hpml_ind" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_loan_is_new_construction_ind" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_loan_customer_segment_code" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_loan_non_subject_property_ind" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_loan_borrower_requested_close_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_type_cd" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_address_1" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_address_2" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_city" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_state_cd" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_zip" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_county" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_latitue" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_longitude" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_property_project_name" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_1_type_cd" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_1_name" type="varchar(120)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_1_work_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_1_home_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_1_cell_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_1_other_cell_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_1_email" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_1_other_email" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_2_type_cd" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_2_name" type="varchar(120)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_2_work_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_2_home_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_2_cell_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_2_other_cell_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_2_email" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_2_other_email" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_3_type_cd" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_3_name" type="varchar(120)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_3_work_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_3_home_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_3_cell_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_3_other_cell_phone" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_3_email" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_contact_3_other_email" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rr_status_cd" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rr_vendor_appraisal_id" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rrvendor_appraisal_draft_rcvd_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rr_xml_form_id" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rr_pdf_form_id" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rr_appr_file_data_sourc_cd" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rr_report_value_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_request_rr_appraisal_company_name" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rrvendor_name" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rrvendor_license_nbr" type="varchar(50)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_request_rrvendor_license_state_cd" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_valuation_completed_product" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_valuation_due_to_client_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_valuation_report_recived_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_valuation_completion_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_valuation_report_status_cd" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_valuation_appraised_value_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_valuation_bpo_market_value_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_valuation_bpo_as_is_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_valuation_bpo_as_repaired_value_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_valuation_red_flag_code" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_valuation_red_flag_desc" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_valuation_amc_appraisal_id" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_valuation_final_review_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_review_recommended_value_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_review_dt" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_review_recommended_action_cd" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_review_reviewer_decision_cd" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_review_review_score" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_review_form_used" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ord_review_provider_on_watch_list_ind" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_review_cured_value_amt" type="decimal(21,2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ord_review_final_recommended_action_cd" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20200506110500-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20200506110500-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/orders.csv"
+                  separator=";"
+                  tableName="orders">
+            <column name="id" type="numeric"/>
+            <column name="ord_number" type="string"/>
+            <column name="ord_stage_cd" type="string"/>
+            <column name="ord_org_order_status_cd" type="string"/>
+            <column name="ord_cmp_order_status_cd" type="string"/>
+            <column name="ord_pro_order_status_cd" type="string"/>
+            <column name="ord_cmp_nbr" type="string"/>
+            <column name="ord_brn_nbr" type="string"/>
+            <column name="ord_pro_nbr" type="string"/>
+            <column name="ord_product_code" type="string"/>
+            <column name="ord_original_value_amt" type="numeric"/>
+            <column name="ord_parent_tracking_nbr" type="string"/>
+            <column name="ord_user_nbr" type="string"/>
+            <column name="ord_order_dt" type="date"/>
+            <column name="ord_rush_request_due_dt" type="date"/>
+            <column name="ord_org_instructions" type="string"/>
+            <column name="ord_org_other_instructions" type="string"/>
+            <column name="ord_multi_order_ind" type="boolean"/>
+            <column name="ord_org_duedate" type="date"/>
+            <column name="ord_pro_duedate" type="date"/>
+            <column name="ord_ucdp_data_fnma_submit_to_ucdp_ind" type="boolean"/>
+            <column name="ord_ucdp_data_fnma_servicer_nbr" type="string"/>
+            <column name="ord_ucdp_data_fhlmc_submit_to_ucdp_ind" type="boolean"/>
+            <column name="ord_ucdp_data_fhlmc_identification_nbr" type="string"/>
+            <column name="ord_ucdp_data_ucdp_bussiness_unit_nbr" type="string"/>
+            <column name="ord_ucdp_sd_fnama_document_id" type="string"/>
+            <column name="ord_ucdp_sd_fnma_submission_status_id" type="string"/>
+            <column name="ord_ucdp_sd_fhlmc_document_file_cd" type="string"/>
+            <column name="ord_ucdp_sd_ead_submission_status_cd" type="string"/>
+            <column name="ord_ucdp_final_submission_dt" type="date"/>
+            <column name="ord_loan_nbr" type="string"/>
+            <column name="ordloan_old_loan_nbr" type="string"/>
+            <column name="ord_loan_program" type="string"/>
+            <column name="ord_loan_purpose" type="string"/>
+            <column name="ord_loan_type" type="string"/>
+            <column name="ord_loan_amt" type="numeric"/>
+            <column name="ord_loan_qualifying_value_amt" type="numeric"/>
+            <column name="ord_loan_sales_price_amt" type="numeric"/>
+            <column name="ord_loan_borrower_last_name" type="string"/>
+            <column name="ord_loan_borrower_first_name" type="string"/>
+            <column name="ord_loan_borrower_middle_name" type="string"/>
+            <column name="ord_loan_borrower_is_co_borrower_ind" type="boolean"/>
+            <column name="ord_loan_fha_case_nbr" type="string"/>
+            <column name="ord_loan_deed_restriction_ind" type="boolean"/>
+            <column name="ord_loan_estimated_close_dt" type="date"/>
+            <column name="ord_loan_hpml_ind" type="boolean"/>
+            <column name="ord_loan_is_new_construction_ind" type="boolean"/>
+            <column name="ord_loan_customer_segment_code" type="string"/>
+            <column name="ord_loan_non_subject_property_ind" type="boolean"/>
+            <column name="ord_loan_borrower_requested_close_dt" type="date"/>
+            <column name="ord_property_type_cd" type="string"/>
+            <column name="ord_property_address_1" type="string"/>
+            <column name="ord_property_address_2" type="string"/>
+            <column name="ord_property_city" type="string"/>
+            <column name="ord_property_state_cd" type="string"/>
+            <column name="ord_property_zip" type="string"/>
+            <column name="ord_property_county" type="string"/>
+            <column name="ord_property_latitue" type="string"/>
+            <column name="ord_property_longitude" type="string"/>
+            <column name="ord_property_project_name" type="string"/>
+            <column name="ord_contact_1_type_cd" type="string"/>
+            <column name="ord_contact_1_name" type="string"/>
+            <column name="ord_contact_1_work_phone" type="numeric"/>
+            <column name="ord_contact_1_home_phone" type="numeric"/>
+            <column name="ord_contact_1_cell_phone" type="numeric"/>
+            <column name="ord_contact_1_other_cell_phone" type="numeric"/>
+            <column name="ord_contact_1_email" type="string"/>
+            <column name="ord_contact_1_other_email" type="string"/>
+            <column name="ord_contact_2_type_cd" type="string"/>
+            <column name="ord_contact_2_name" type="string"/>
+            <column name="ord_contact_2_work_phone" type="numeric"/>
+            <column name="ord_contact_2_home_phone" type="numeric"/>
+            <column name="ord_contact_2_cell_phone" type="numeric"/>
+            <column name="ord_contact_2_other_cell_phone" type="numeric"/>
+            <column name="ord_contact_2_email" type="string"/>
+            <column name="ord_contact_2_other_email" type="string"/>
+            <column name="ord_contact_3_type_cd" type="string"/>
+            <column name="ord_contact_3_name" type="string"/>
+            <column name="ord_contact_3_work_phone" type="numeric"/>
+            <column name="ord_contact_3_home_phone" type="numeric"/>
+            <column name="ord_contact_3_cell_phone" type="numeric"/>
+            <column name="ord_contact_3_other_cell_phone" type="numeric"/>
+            <column name="ord_contact_3_email" type="string"/>
+            <column name="ord_contact_3_other_email" type="string"/>
+            <column name="ord_request_rr_status_cd" type="string"/>
+            <column name="ord_request_rr_vendor_appraisal_id" type="string"/>
+            <column name="ord_request_rrvendor_appraisal_draft_rcvd_dt" type="date"/>
+            <column name="ord_request_rr_xml_form_id" type="string"/>
+            <column name="ord_request_rr_pdf_form_id" type="string"/>
+            <column name="ord_request_rr_appr_file_data_sourc_cd" type="string"/>
+            <column name="ord_request_rr_report_value_amt" type="numeric"/>
+            <column name="ord_request_rr_appraisal_company_name" type="string"/>
+            <column name="ord_request_rrvendor_name" type="string"/>
+            <column name="ord_request_rrvendor_license_nbr" type="string"/>
+            <column name="ord_request_rrvendor_license_state_cd" type="string"/>
+            <column name="ord_valuation_completed_product" type="string"/>
+            <column name="ord_valuation_due_to_client_dt" type="date"/>
+            <column name="ord_valuation_report_recived_dt" type="date"/>
+            <column name="ord_valuation_completion_dt" type="date"/>
+            <column name="ord_valuation_report_status_cd" type="string"/>
+            <column name="ord_valuation_appraised_value_amt" type="numeric"/>
+            <column name="ord_valuation_bpo_market_value_amt" type="numeric"/>
+            <column name="ord_valuation_bpo_as_is_amt" type="numeric"/>
+            <column name="ord_valuation_bpo_as_repaired_value_amt" type="numeric"/>
+            <column name="ord_valuation_red_flag_code" type="string"/>
+            <column name="ord_valuation_red_flag_desc" type="string"/>
+            <column name="ord_valuation_amc_appraisal_id" type="string"/>
+            <column name="ord_valuation_final_review_id" type="numeric"/>
+            <column name="ord_review_recommended_value_amt" type="numeric"/>
+            <column name="ord_review_dt" type="date"/>
+            <column name="ord_review_recommended_action_cd" type="string"/>
+            <column name="ord_review_reviewer_decision_cd" type="string"/>
+            <column name="ord_review_review_score" type="string"/>
+            <column name="ord_review_form_used" type="string"/>
+            <column name="ord_review_provider_on_watch_list_ind" type="boolean"/>
+            <column name="ord_review_cured_value_amt" type="numeric"/>
+            <column name="ord_review_final_recommended_action_cd" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here, do not remove-->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

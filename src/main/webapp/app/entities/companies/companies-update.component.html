@@ -1,0 +1,210 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-companies-heading" jhiTranslate="revalApp.companies.home.createOrEditLabel">Create or edit a Companies</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpNbr" for="field_cmpNbr">Cmp Nbr</label>
+                    <input type="text" class="form-control" name="cmpNbr" id="field_cmpNbr"
+                           formControlName="cmpNbr"/>
+                    <div *ngIf="editForm.get('cmpNbr')!.invalid && (editForm.get('cmpNbr')!.dirty || editForm.get('cmpNbr')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpNbr')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpName" for="field_cmpName">Cmp Name</label>
+                    <input type="text" class="form-control" name="cmpName" id="field_cmpName"
+                           formControlName="cmpName"/>
+                    <div *ngIf="editForm.get('cmpName')!.invalid && (editForm.get('cmpName')!.dirty || editForm.get('cmpName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpName')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 80 }">
+                        This field cannot be longer than 80 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpServiceTypeCd" for="field_cmpServiceTypeCd">Cmp Service Type Cd</label>
+                    <input type="text" class="form-control" name="cmpServiceTypeCd" id="field_cmpServiceTypeCd"
+                           formControlName="cmpServiceTypeCd"/>
+                    <div *ngIf="editForm.get('cmpServiceTypeCd')!.invalid && (editForm.get('cmpServiceTypeCd')!.dirty || editForm.get('cmpServiceTypeCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpServiceTypeCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpShortName" for="field_cmpShortName">Cmp Short Name</label>
+                    <input type="text" class="form-control" name="cmpShortName" id="field_cmpShortName"
+                           formControlName="cmpShortName"/>
+                    <div *ngIf="editForm.get('cmpShortName')!.invalid && (editForm.get('cmpShortName')!.dirty || editForm.get('cmpShortName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpShortName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpShortName')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpStatusCd" for="field_cmpStatusCd">Cmp Status Cd</label>
+                    <input type="text" class="form-control" name="cmpStatusCd" id="field_cmpStatusCd"
+                           formControlName="cmpStatusCd"/>
+                    <div *ngIf="editForm.get('cmpStatusCd')!.invalid && (editForm.get('cmpStatusCd')!.dirty || editForm.get('cmpStatusCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpTypeCd" for="field_cmpTypeCd">Cmp Type Cd</label>
+                    <input type="text" class="form-control" name="cmpTypeCd" id="field_cmpTypeCd"
+                           formControlName="cmpTypeCd"/>
+                    <div *ngIf="editForm.get('cmpTypeCd')!.invalid && (editForm.get('cmpTypeCd')!.dirty || editForm.get('cmpTypeCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpTypeCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpTypeCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpAddress1" for="field_cmpAddress1">Cmp Address 1</label>
+                    <input type="text" class="form-control" name="cmpAddress1" id="field_cmpAddress1"
+                           formControlName="cmpAddress1"/>
+                    <div *ngIf="editForm.get('cmpAddress1')!.invalid && (editForm.get('cmpAddress1')!.dirty || editForm.get('cmpAddress1')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpAddress1')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpAddress1')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 80 }">
+                        This field cannot be longer than 80 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpAddress2" for="field_cmpAddress2">Cmp Address 2</label>
+                    <input type="text" class="form-control" name="cmpAddress2" id="field_cmpAddress2"
+                           formControlName="cmpAddress2"/>
+                    <div *ngIf="editForm.get('cmpAddress2')!.invalid && (editForm.get('cmpAddress2')!.dirty || editForm.get('cmpAddress2')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpAddress2')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpAddress2')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 80 }">
+                        This field cannot be longer than 80 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpCity" for="field_cmpCity">Cmp City</label>
+                    <input type="text" class="form-control" name="cmpCity" id="field_cmpCity"
+                           formControlName="cmpCity"/>
+                    <div *ngIf="editForm.get('cmpCity')!.invalid && (editForm.get('cmpCity')!.dirty || editForm.get('cmpCity')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpCity')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpCity')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpStateCd" for="field_cmpStateCd">Cmp State Cd</label>
+                    <input type="text" class="form-control" name="cmpStateCd" id="field_cmpStateCd"
+                           formControlName="cmpStateCd"/>
+                    <div *ngIf="editForm.get('cmpStateCd')!.invalid && (editForm.get('cmpStateCd')!.dirty || editForm.get('cmpStateCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpStateCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpStateCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpZip" for="field_cmpZip">Cmp Zip</label>
+                    <input type="text" class="form-control" name="cmpZip" id="field_cmpZip"
+                           formControlName="cmpZip"/>
+                    <div *ngIf="editForm.get('cmpZip')!.invalid && (editForm.get('cmpZip')!.dirty || editForm.get('cmpZip')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpZip')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpZip')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.companies.cmpEnabledInd" for="field_cmpEnabledInd">Cmp Enabled Ind</label>
+                    <input type="checkbox" class="form-control" name="cmpEnabledInd" id="field_cmpEnabledInd"
+                           formControlName="cmpEnabledInd"/>
+                    <div *ngIf="editForm.get('cmpEnabledInd')!.invalid && (editForm.get('cmpEnabledInd')!.dirty || editForm.get('cmpEnabledInd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('cmpEnabledInd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

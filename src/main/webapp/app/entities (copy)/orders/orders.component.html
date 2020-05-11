@@ -1,0 +1,291 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="revalApp.orders.home.title">Orders</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-orders" [routerLink]="['/orders/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="revalApp.orders.home.createLabel">
+            Create a new Orders
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="orders?.length === 0">
+        <span jhiTranslate="revalApp.orders.home.notFound">No orders found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="orders?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordNumber">Ord Number</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordStageCd">Ord Stage Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordOrgOrderStatusCd">Ord Org Order Status Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordCmpOrderStatusCd">Ord Cmp Order Status Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordProOrderStatusCd">Ord Pro Order Status Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordCmpNbr">Ord Cmp Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordBrnNbr">Ord Brn Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordProNbr">Ord Pro Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordProductCode">Ord Product Code</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordOriginalValueAmt">Ord Original Value Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordParentTrackingNbr">Ord Parent Tracking Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUserNbr">Ord User Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordOrderDt">Ord Order Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRushRequestDueDt">Ord Rush Request Due Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordOrgInstructions">Ord Org Instructions</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordOrgOtherInstructions">Ord Org Other Instructions</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordMultiOrderInd">Ord Multi Order Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordOrgDuedate">Ord Org Duedate</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordProDuedate">Ord Pro Duedate</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpDataFnmaSubmitToUcdpInd">Ord Ucdp Data Fnma Submit To Ucdp Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpDataFnmaServicerNbr">Ord Ucdp Data Fnma Servicer Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpDataFhlmcSubmitToUcdpInd">Ord Ucdp Data Fhlmc Submit To Ucdp Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpDataFhlmcIdentificationNbr">Ord Ucdp Data Fhlmc Identification Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpDataUcdpBussinessUnitNbr">Ord Ucdp Data Ucdp Bussiness Unit Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpSdFnamaDocumentId">Ord Ucdp Sd Fnama Document Id</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpSdFnmaSubmissionStatusId">Ord Ucdp Sd Fnma Submission Status Id</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpSdFhlmcDocumentFileCd">Ord Ucdp Sd Fhlmc Document File Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpSdEadSubmissionStatusCd">Ord Ucdp Sd Ead Submission Status Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordUcdpFinalSubmissionDt">Ord Ucdp Final Submission Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanNbr">Ord Loan Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordloanOldLoanNbr">Ordloan Old Loan Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanProgram">Ord Loan Program</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanPurpose">Ord Loan Purpose</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanType">Ord Loan Type</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanAmt">Ord Loan Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanQualifyingValueAmt">Ord Loan Qualifying Value Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanSalesPriceAmt">Ord Loan Sales Price Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanBorrowerLastName">Ord Loan Borrower Last Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanBorrowerFirstName">Ord Loan Borrower First Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanBorrowerMiddleName">Ord Loan Borrower Middle Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanBorrowerIsCoBorrowerInd">Ord Loan Borrower Is Co Borrower Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanFhaCaseNbr">Ord Loan Fha Case Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanDeedRestrictionInd">Ord Loan Deed Restriction Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanEstimatedCloseDt">Ord Loan Estimated Close Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanHpmlInd">Ord Loan Hpml Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanIsNewConstructionInd">Ord Loan Is New Construction Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanCustomerSegmentCode">Ord Loan Customer Segment Code</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanNonSubjectPropertyInd">Ord Loan Non Subject Property Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordLoanBorrowerRequestedCloseDt">Ord Loan Borrower Requested Close Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyTypeCd">Ord Property Type Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyAddress1">Ord Property Address 1</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyAddress2">Ord Property Address 2</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyCity">Ord Property City</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyStateCd">Ord Property State Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyZip">Ord Property Zip</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyCounty">Ord Property County</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyLatitue">Ord Property Latitue</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyLongitude">Ord Property Longitude</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordPropertyProjectName">Ord Property Project Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact1TypeCd">Ord Contact 1 Type Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact1Name">Ord Contact 1 Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact1WorkPhone">Ord Contact 1 Work Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact1HomePhone">Ord Contact 1 Home Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact1CellPhone">Ord Contact 1 Cell Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact1OtherCellPhone">Ord Contact 1 Other Cell Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact1Email">Ord Contact 1 Email</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact1OtherEmail">Ord Contact 1 Other Email</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact2TypeCd">Ord Contact 2 Type Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact2Name">Ord Contact 2 Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact2WorkPhone">Ord Contact 2 Work Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact2HomePhone">Ord Contact 2 Home Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact2CellPhone">Ord Contact 2 Cell Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact2OtherCellPhone">Ord Contact 2 Other Cell Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact2Email">Ord Contact 2 Email</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact2OtherEmail">Ord Contact 2 Other Email</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact3TypeCd">Ord Contact 3 Type Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact3Name">Ord Contact 3 Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact3WorkPhone">Ord Contact 3 Work Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact3HomePhone">Ord Contact 3 Home Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact3CellPhone">Ord Contact 3 Cell Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact3OtherCellPhone">Ord Contact 3 Other Cell Phone</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact3Email">Ord Contact 3 Email</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordContact3OtherEmail">Ord Contact 3 Other Email</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrStatusCd">Ord Request Rr Status Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrVendorAppraisalId">Ord Request Rr Vendor Appraisal Id</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrvendorAppraisalDraftRcvdDt">Ord Request Rrvendor Appraisal Draft Rcvd Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrXmlFormId">Ord Request Rr Xml Form Id</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrPdfFormId">Ord Request Rr Pdf Form Id</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrApprFileDataSourcCd">Ord Request Rr Appr File Data Sourc Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrReportValueAmt">Ord Request Rr Report Value Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrAppraisalCompanyName">Ord Request Rr Appraisal Company Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrvendorName">Ord Request Rrvendor Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrvendorLicenseNbr">Ord Request Rrvendor License Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordRequestRrvendorLicenseStateCd">Ord Request Rrvendor License State Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationCompletedProduct">Ord Valuation Completed Product</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationDueToClientDt">Ord Valuation Due To Client Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationReportRecivedDt">Ord Valuation Report Recived Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationCompletionDt">Ord Valuation Completion Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationReportStatusCd">Ord Valuation Report Status Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationAppraisedValueAmt">Ord Valuation Appraised Value Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationBpoMarketValueAmt">Ord Valuation Bpo Market Value Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationBpoAsIsAmt">Ord Valuation Bpo As Is Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationBpoAsRepairedValueAmt">Ord Valuation Bpo As Repaired Value Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationRedFlagCode">Ord Valuation Red Flag Code</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationRedFlagDesc">Ord Valuation Red Flag Desc</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationAmcAppraisalId">Ord Valuation Amc Appraisal Id</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordValuationFinalReviewId">Ord Valuation Final Review Id</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordReviewRecommendedValueAmt">Ord Review Recommended Value Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordReviewDt">Ord Review Dt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordReviewRecommendedActionCd">Ord Review Recommended Action Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordReviewReviewerDecisionCd">Ord Review Reviewer Decision Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordReviewReviewScore">Ord Review Review Score</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordReviewFormUsed">Ord Review Form Used</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordReviewProviderOnWatchListInd">Ord Review Provider On Watch List Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordReviewCuredValueAmt">Ord Review Cured Value Amt</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.orders.ordReviewFinalRecommendedActionCd">Ord Review Final Recommended Action Cd</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let orders of orders ;trackBy: trackId">
+                    <td><a [routerLink]="['/orders', orders.id, 'view']">{{ orders.id }}</a></td>
+                    <td>{{ orders.ordNumber }}</td>
+                    <td>{{ orders.ordStageCd }}</td>
+                    <td>{{ orders.ordOrgOrderStatusCd }}</td>
+                    <td>{{ orders.ordCmpOrderStatusCd }}</td>
+                    <td>{{ orders.ordProOrderStatusCd }}</td>
+                    <td>{{ orders.ordCmpNbr }}</td>
+                    <td>{{ orders.ordBrnNbr }}</td>
+                    <td>{{ orders.ordProNbr }}</td>
+                    <td>{{ orders.ordProductCode }}</td>
+                    <td>{{ orders.ordOriginalValueAmt }}</td>
+                    <td>{{ orders.ordParentTrackingNbr }}</td>
+                    <td>{{ orders.ordUserNbr }}</td>
+                    <td>{{ orders.ordOrderDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordRushRequestDueDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordOrgInstructions }}</td>
+                    <td>{{ orders.ordOrgOtherInstructions }}</td>
+                    <td>{{ orders.ordMultiOrderInd }}</td>
+                    <td>{{ orders.ordOrgDuedate | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordProDuedate | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordUcdpDataFnmaSubmitToUcdpInd }}</td>
+                    <td>{{ orders.ordUcdpDataFnmaServicerNbr }}</td>
+                    <td>{{ orders.ordUcdpDataFhlmcSubmitToUcdpInd }}</td>
+                    <td>{{ orders.ordUcdpDataFhlmcIdentificationNbr }}</td>
+                    <td>{{ orders.ordUcdpDataUcdpBussinessUnitNbr }}</td>
+                    <td>{{ orders.ordUcdpSdFnamaDocumentId }}</td>
+                    <td>{{ orders.ordUcdpSdFnmaSubmissionStatusId }}</td>
+                    <td>{{ orders.ordUcdpSdFhlmcDocumentFileCd }}</td>
+                    <td>{{ orders.ordUcdpSdEadSubmissionStatusCd }}</td>
+                    <td>{{ orders.ordUcdpFinalSubmissionDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordLoanNbr }}</td>
+                    <td>{{ orders.ordloanOldLoanNbr }}</td>
+                    <td>{{ orders.ordLoanProgram }}</td>
+                    <td>{{ orders.ordLoanPurpose }}</td>
+                    <td>{{ orders.ordLoanType }}</td>
+                    <td>{{ orders.ordLoanAmt }}</td>
+                    <td>{{ orders.ordLoanQualifyingValueAmt }}</td>
+                    <td>{{ orders.ordLoanSalesPriceAmt }}</td>
+                    <td>{{ orders.ordLoanBorrowerLastName }}</td>
+                    <td>{{ orders.ordLoanBorrowerFirstName }}</td>
+                    <td>{{ orders.ordLoanBorrowerMiddleName }}</td>
+                    <td>{{ orders.ordLoanBorrowerIsCoBorrowerInd }}</td>
+                    <td>{{ orders.ordLoanFhaCaseNbr }}</td>
+                    <td>{{ orders.ordLoanDeedRestrictionInd }}</td>
+                    <td>{{ orders.ordLoanEstimatedCloseDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordLoanHpmlInd }}</td>
+                    <td>{{ orders.ordLoanIsNewConstructionInd }}</td>
+                    <td>{{ orders.ordLoanCustomerSegmentCode }}</td>
+                    <td>{{ orders.ordLoanNonSubjectPropertyInd }}</td>
+                    <td>{{ orders.ordLoanBorrowerRequestedCloseDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordPropertyTypeCd }}</td>
+                    <td>{{ orders.ordPropertyAddress1 }}</td>
+                    <td>{{ orders.ordPropertyAddress2 }}</td>
+                    <td>{{ orders.ordPropertyCity }}</td>
+                    <td>{{ orders.ordPropertyStateCd }}</td>
+                    <td>{{ orders.ordPropertyZip }}</td>
+                    <td>{{ orders.ordPropertyCounty }}</td>
+                    <td>{{ orders.ordPropertyLatitue }}</td>
+                    <td>{{ orders.ordPropertyLongitude }}</td>
+                    <td>{{ orders.ordPropertyProjectName }}</td>
+                    <td>{{ orders.ordContact1TypeCd }}</td>
+                    <td>{{ orders.ordContact1Name }}</td>
+                    <td>{{ orders.ordContact1WorkPhone }}</td>
+                    <td>{{ orders.ordContact1HomePhone }}</td>
+                    <td>{{ orders.ordContact1CellPhone }}</td>
+                    <td>{{ orders.ordContact1OtherCellPhone }}</td>
+                    <td>{{ orders.ordContact1Email }}</td>
+                    <td>{{ orders.ordContact1OtherEmail }}</td>
+                    <td>{{ orders.ordContact2TypeCd }}</td>
+                    <td>{{ orders.ordContact2Name }}</td>
+                    <td>{{ orders.ordContact2WorkPhone }}</td>
+                    <td>{{ orders.ordContact2HomePhone }}</td>
+                    <td>{{ orders.ordContact2CellPhone }}</td>
+                    <td>{{ orders.ordContact2OtherCellPhone }}</td>
+                    <td>{{ orders.ordContact2Email }}</td>
+                    <td>{{ orders.ordContact2OtherEmail }}</td>
+                    <td>{{ orders.ordContact3TypeCd }}</td>
+                    <td>{{ orders.ordContact3Name }}</td>
+                    <td>{{ orders.ordContact3WorkPhone }}</td>
+                    <td>{{ orders.ordContact3HomePhone }}</td>
+                    <td>{{ orders.ordContact3CellPhone }}</td>
+                    <td>{{ orders.ordContact3OtherCellPhone }}</td>
+                    <td>{{ orders.ordContact3Email }}</td>
+                    <td>{{ orders.ordContact3OtherEmail }}</td>
+                    <td>{{ orders.ordRequestRrStatusCd }}</td>
+                    <td>{{ orders.ordRequestRrVendorAppraisalId }}</td>
+                    <td>{{ orders.ordRequestRrvendorAppraisalDraftRcvdDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordRequestRrXmlFormId }}</td>
+                    <td>{{ orders.ordRequestRrPdfFormId }}</td>
+                    <td>{{ orders.ordRequestRrApprFileDataSourcCd }}</td>
+                    <td>{{ orders.ordRequestRrReportValueAmt }}</td>
+                    <td>{{ orders.ordRequestRrAppraisalCompanyName }}</td>
+                    <td>{{ orders.ordRequestRrvendorName }}</td>
+                    <td>{{ orders.ordRequestRrvendorLicenseNbr }}</td>
+                    <td>{{ orders.ordRequestRrvendorLicenseStateCd }}</td>
+                    <td>{{ orders.ordValuationCompletedProduct }}</td>
+                    <td>{{ orders.ordValuationDueToClientDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordValuationReportRecivedDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordValuationCompletionDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordValuationReportStatusCd }}</td>
+                    <td>{{ orders.ordValuationAppraisedValueAmt }}</td>
+                    <td>{{ orders.ordValuationBpoMarketValueAmt }}</td>
+                    <td>{{ orders.ordValuationBpoAsIsAmt }}</td>
+                    <td>{{ orders.ordValuationBpoAsRepairedValueAmt }}</td>
+                    <td>{{ orders.ordValuationRedFlagCode }}</td>
+                    <td>{{ orders.ordValuationRedFlagDesc }}</td>
+                    <td>{{ orders.ordValuationAmcAppraisalId }}</td>
+                    <td>{{ orders.ordValuationFinalReviewId }}</td>
+                    <td>{{ orders.ordReviewRecommendedValueAmt }}</td>
+                    <td>{{ orders.ordReviewDt | date:'mediumDate' }}</td>
+                    <td>{{ orders.ordReviewRecommendedActionCd }}</td>
+                    <td>{{ orders.ordReviewReviewerDecisionCd }}</td>
+                    <td>{{ orders.ordReviewReviewScore }}</td>
+                    <td>{{ orders.ordReviewFormUsed }}</td>
+                    <td>{{ orders.ordReviewProviderOnWatchListInd }}</td>
+                    <td>{{ orders.ordReviewCuredValueAmt }}</td>
+                    <td>{{ orders.ordReviewFinalRecommendedActionCd }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/orders', orders.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/orders', orders.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(orders)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

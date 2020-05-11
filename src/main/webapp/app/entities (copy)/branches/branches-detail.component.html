@@ -1,0 +1,80 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="branches">
+            <h2><span jhiTranslate="revalApp.branches.detail.title">Branches</span> {{ branches.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.branches.brnNbr">Brn Nbr</span></dt>
+                <dd>
+                    <span>{{ branches.brnNbr }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnName">Brn Name</span></dt>
+                <dd>
+                    <span>{{ branches.brnName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnCode">Brn Code</span></dt>
+                <dd>
+                    <span>{{ branches.brnCode }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnShortName">Brn Short Name</span></dt>
+                <dd>
+                    <span>{{ branches.brnShortName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnAddress1">Brn Address 1</span></dt>
+                <dd>
+                    <span>{{ branches.brnAddress1 }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnAddress2">Brn Address 2</span></dt>
+                <dd>
+                    <span>{{ branches.brnAddress2 }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnCity">Brn City</span></dt>
+                <dd>
+                    <span>{{ branches.brnCity }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnStateCd">Brn State Cd</span></dt>
+                <dd>
+                    <span>{{ branches.brnStateCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnZip">Brn Zip</span></dt>
+                <dd>
+                    <span>{{ branches.brnZip }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnEnabledInd">Brn Enabled Ind</span></dt>
+                <dd>
+                    <span>{{ branches.brnEnabledInd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnRegioinCd">Brn Regioin Cd</span></dt>
+                <dd>
+                    <span>{{ branches.brnRegioinCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.brnServiceTypeCd">Brn Service Type Cd</span></dt>
+                <dd>
+                    <span>{{ branches.brnServiceTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.branches.company">Company</span></dt>
+                <dd>
+                    <div *ngIf="branches.company">
+                        <a [routerLink]="['/companies', branches.company?.id, 'view']">{{ branches.company?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/branches', branches.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

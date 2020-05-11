@@ -1,0 +1,25 @@
+{
+  "revalApp": {
+    "systemAccess": {
+      "home": {
+        "title": "SystemAccesses",
+        "createLabel": "Créer un nouveau System Access",
+        "createOrEditLabel": "Créer ou éditer un System Access",
+        "notFound": "Aucun System Access trouvé"
+      },
+      "created": "Un nouveau System Access a été créé avec l'identifiant {{ param }}",
+      "updated": "Le System Access avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le System Access avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le System Access {{ id }} ?"
+      },
+      "detail": {
+        "title": "System Access"
+      },
+      "sacAccessKey": "Sac Access Key",
+      "sacAccessTypeCd": "Sac Access Type Cd",
+      "sacAccessValue": "Sac Access Value",
+      "sacAllowedInd": "Sac Allowed Ind"
+    }
+  }
+}

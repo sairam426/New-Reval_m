@@ -1,0 +1,98 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-transactions-heading" jhiTranslate="revalApp.transactions.home.createOrEditLabel">Create or edit a Transactions</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactions.txnEntityId" for="field_txnEntityId">Txn Entity Id</label>
+                    <input type="number" class="form-control" name="txnEntityId" id="field_txnEntityId"
+                           formControlName="txnEntityId"/>
+                    <div *ngIf="editForm.get('txnEntityId')!.invalid && (editForm.get('txnEntityId')!.dirty || editForm.get('txnEntityId')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('txnEntityId')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('txnEntityId')?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactions.txnEntityNbr" for="field_txnEntityNbr">Txn Entity Nbr</label>
+                    <input type="text" class="form-control" name="txnEntityNbr" id="field_txnEntityNbr"
+                           formControlName="txnEntityNbr"/>
+                    <div *ngIf="editForm.get('txnEntityNbr')!.invalid && (editForm.get('txnEntityNbr')!.dirty || editForm.get('txnEntityNbr')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('txnEntityNbr')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactions.txnTcdCode" for="field_txnTcdCode">Txn Tcd Code</label>
+                    <input type="text" class="form-control" name="txnTcdCode" id="field_txnTcdCode"
+                           formControlName="txnTcdCode"/>
+                    <div *ngIf="editForm.get('txnTcdCode')!.invalid && (editForm.get('txnTcdCode')!.dirty || editForm.get('txnTcdCode')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('txnTcdCode')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactions.txnPostDt" for="field_txnPostDt">Txn Post Dt</label>
+                    <div class="input-group">
+                        <input id="field_txnPostDt" type="text" class="form-control" name="txnPostDt" ngbDatepicker #txnPostDtDp="ngbDatepicker" formControlName="txnPostDt"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="txnPostDtDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                    <div *ngIf="editForm.get('txnPostDt')!.invalid && (editForm.get('txnPostDt')!.dirty || editForm.get('txnPostDt')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('txnPostDt')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactions.txnStatusCd" for="field_txnStatusCd">Txn Status Cd</label>
+                    <input type="text" class="form-control" name="txnStatusCd" id="field_txnStatusCd"
+                           formControlName="txnStatusCd"/>
+                    <div *ngIf="editForm.get('txnStatusCd')!.invalid && (editForm.get('txnStatusCd')!.dirty || editForm.get('txnStatusCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('txnStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('txnStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

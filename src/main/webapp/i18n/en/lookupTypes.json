@@ -1,0 +1,23 @@
+{
+  "revalApp": {
+    "lookupTypes": {
+      "home": {
+        "title": "Lookup Types",
+        "createLabel": "Create a new Lookup Types",
+        "createOrEditLabel": "Create or edit a Lookup Types",
+        "notFound": "No Lookup Types found"
+      },
+      "created": "A new Lookup Types is created with identifier {{ param }}",
+      "updated": "A Lookup Types is updated with identifier {{ param }}",
+      "deleted": "A Lookup Types is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Lookup Types {{ id }}?"
+      },
+      "detail": {
+        "title": "Lookup Types"
+      },
+      "lktType": "Lkt Type",
+      "lktDesc": "Lkt Desc"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-system-access-heading" jhiTranslate="revalApp.systemAccess.home.createOrEditLabel">Create or edit a System Access</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.systemAccess.sacAccessKey" for="field_sacAccessKey">Sac Access Key</label>
+                    <input type="text" class="form-control" name="sacAccessKey" id="field_sacAccessKey"
+                           formControlName="sacAccessKey"/>
+                    <div *ngIf="editForm.get('sacAccessKey')!.invalid && (editForm.get('sacAccessKey')!.dirty || editForm.get('sacAccessKey')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('sacAccessKey')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('sacAccessKey')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 240 }">
+                        This field cannot be longer than 240 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.systemAccess.sacAccessTypeCd" for="field_sacAccessTypeCd">Sac Access Type Cd</label>
+                    <input type="text" class="form-control" name="sacAccessTypeCd" id="field_sacAccessTypeCd"
+                           formControlName="sacAccessTypeCd"/>
+                    <div *ngIf="editForm.get('sacAccessTypeCd')!.invalid && (editForm.get('sacAccessTypeCd')!.dirty || editForm.get('sacAccessTypeCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('sacAccessTypeCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('sacAccessTypeCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.systemAccess.sacAccessValue" for="field_sacAccessValue">Sac Access Value</label>
+                    <input type="text" class="form-control" name="sacAccessValue" id="field_sacAccessValue"
+                           formControlName="sacAccessValue"/>
+                    <div *ngIf="editForm.get('sacAccessValue')!.invalid && (editForm.get('sacAccessValue')!.dirty || editForm.get('sacAccessValue')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('sacAccessValue')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('sacAccessValue')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 80 }">
+                        This field cannot be longer than 80 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.systemAccess.sacAllowedInd" for="field_sacAllowedInd">Sac Allowed Ind</label>
+                    <input type="checkbox" class="form-control" name="sacAllowedInd" id="field_sacAllowedInd"
+                           formControlName="sacAllowedInd"/>
+                    <div *ngIf="editForm.get('sacAllowedInd')!.invalid && (editForm.get('sacAllowedInd')!.dirty || editForm.get('sacAllowedInd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('sacAllowedInd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

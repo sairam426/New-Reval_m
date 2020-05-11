@@ -1,0 +1,25 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /home/mahi/Desktop/REVAL_M
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git config --get commit.template
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c

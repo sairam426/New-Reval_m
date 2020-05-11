@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="transactionCodes">
+            <h2><span jhiTranslate="revalApp.transactionCodes.detail.title">Transaction Codes</span> {{ transactionCodes.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.transactionCodes.tcdCode">Tcd Code</span></dt>
+                <dd>
+                    <span>{{ transactionCodes.tcdCode }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodes.tcdEntityGroupCd">Tcd Entity Group Cd</span></dt>
+                <dd>
+                    <span>{{ transactionCodes.tcdEntityGroupCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodes.tcdDesc">Tcd Desc</span></dt>
+                <dd>
+                    <span>{{ transactionCodes.tcdDesc }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodes.tcdEnabledInd">Tcd Enabled Ind</span></dt>
+                <dd>
+                    <span>{{ transactionCodes.tcdEnabledInd }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/transaction-codes', transactionCodes.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

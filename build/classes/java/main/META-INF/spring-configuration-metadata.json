@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "com.jhipster.reval.ui.config.ApplicationProperties",
+      "sourceType": "com.jhipster.reval.ui.config.ApplicationProperties"
+    },
+    {
+      "name": "spring.datasource.hikari",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.jhipster.reval.ui.config.CloudDatabaseConfiguration",
+      "sourceMethod": "dataSource(org.springframework.cache.CacheManager)"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

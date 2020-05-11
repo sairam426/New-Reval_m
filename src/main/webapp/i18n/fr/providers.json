@@ -1,0 +1,34 @@
+{
+  "revalApp": {
+    "providers": {
+      "home": {
+        "title": "Providers",
+        "createLabel": "Créer un nouveau Providers",
+        "createOrEditLabel": "Créer ou éditer un Providers",
+        "notFound": "Aucun Providers trouvé"
+      },
+      "created": "Un nouveau Providers a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Providers avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Providers avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Providers {{ id }} ?"
+      },
+      "detail": {
+        "title": "Providers"
+      },
+      "proNbr": "Pro Nbr",
+      "proName": "Pro Name",
+      "proShortName": "Pro Short Name",
+      "proStatusCd": "Pro Status Cd",
+      "proTypeCd": "Pro Type Cd",
+      "proGroupCd": "Pro Group Cd",
+      "proLicenseNbr": "Pro License Nbr",
+      "proLicenseStatusCd": "Pro License Status Cd",
+      "proAddress1": "Pro Address 1",
+      "proAddress2": "Pro Address 2",
+      "proCity": "Pro City",
+      "proStateCd": "Pro State Cd",
+      "proZip": "Pro Zip"
+    }
+  }
+}

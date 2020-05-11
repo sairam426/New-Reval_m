@@ -1,0 +1,34 @@
+{
+  "revalApp": {
+    "branches": {
+      "home": {
+        "title": "Branches",
+        "createLabel": "Create a new Branches",
+        "createOrEditLabel": "Create or edit a Branches",
+        "notFound": "No Branches found"
+      },
+      "created": "A new Branches is created with identifier {{ param }}",
+      "updated": "A Branches is updated with identifier {{ param }}",
+      "deleted": "A Branches is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Branches {{ id }}?"
+      },
+      "detail": {
+        "title": "Branches"
+      },
+      "brnNbr": "Brn Nbr",
+      "brnName": "Brn Name",
+      "brnCode": "Brn Code",
+      "brnShortName": "Brn Short Name",
+      "brnAddress1": "Brn Address 1",
+      "brnAddress2": "Brn Address 2",
+      "brnCity": "Brn City",
+      "brnStateCd": "Brn State Cd",
+      "brnZip": "Brn Zip",
+      "brnEnabledInd": "Brn Enabled Ind",
+      "brnRegioinCd": "Brn Regioin Cd",
+      "brnServiceTypeCd": "Brn Service Type Cd",
+      "company": "Company"
+    }
+  }
+}

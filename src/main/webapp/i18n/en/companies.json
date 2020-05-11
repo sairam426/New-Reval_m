@@ -1,0 +1,33 @@
+{
+  "revalApp": {
+    "companies": {
+      "home": {
+        "title": "Companies",
+        "createLabel": "Create a new Companies",
+        "createOrEditLabel": "Create or edit a Companies",
+        "notFound": "No Companies found"
+      },
+      "created": "A new Companies is created with identifier {{ param }}",
+      "updated": "A Companies is updated with identifier {{ param }}",
+      "deleted": "A Companies is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Companies {{ id }}?"
+      },
+      "detail": {
+        "title": "Companies"
+      },
+      "cmpNbr": "Cmp Nbr",
+      "cmpName": "Cmp Name",
+      "cmpServiceTypeCd": "Cmp Service Type Cd",
+      "cmpShortName": "Cmp Short Name",
+      "cmpStatusCd": "Cmp Status Cd",
+      "cmpTypeCd": "Cmp Type Cd",
+      "cmpAddress1": "Cmp Address 1",
+      "cmpAddress2": "Cmp Address 2",
+      "cmpCity": "Cmp City",
+      "cmpStateCd": "Cmp State Cd",
+      "cmpZip": "Cmp Zip",
+      "cmpEnabledInd": "Cmp Enabled Ind"
+    }
+  }
+}

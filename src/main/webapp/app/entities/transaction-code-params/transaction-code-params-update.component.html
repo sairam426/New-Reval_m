@@ -1,0 +1,170 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-transaction-code-params-heading" jhiTranslate="revalApp.transactionCodeParams.home.createOrEditLabel">Create or edit a Transaction Code Params</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.tcpTcdCode" for="field_tcpTcdCode">Tcp Tcd Code</label>
+                    <input type="text" class="form-control" name="tcpTcdCode" id="field_tcpTcdCode"
+                           formControlName="tcpTcdCode"/>
+                    <div *ngIf="editForm.get('tcpTcdCode')!.invalid && (editForm.get('tcpTcdCode')!.dirty || editForm.get('tcpTcdCode')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpTcdCode')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpTcdCode')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.tcpParamName" for="field_tcpParamName">Tcp Param Name</label>
+                    <input type="text" class="form-control" name="tcpParamName" id="field_tcpParamName"
+                           formControlName="tcpParamName"/>
+                    <div *ngIf="editForm.get('tcpParamName')!.invalid && (editForm.get('tcpParamName')!.dirty || editForm.get('tcpParamName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamName')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.tcpParamDesc" for="field_tcpParamDesc">Tcp Param Desc</label>
+                    <input type="text" class="form-control" name="tcpParamDesc" id="field_tcpParamDesc"
+                           formControlName="tcpParamDesc"/>
+                    <div *ngIf="editForm.get('tcpParamDesc')!.invalid && (editForm.get('tcpParamDesc')!.dirty || editForm.get('tcpParamDesc')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamDesc')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamDesc')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 80 }">
+                        This field cannot be longer than 80 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.tcpEnabledInd" for="field_tcpEnabledInd">Tcp Enabled Ind</label>
+                    <input type="checkbox" class="form-control" name="tcpEnabledInd" id="field_tcpEnabledInd"
+                           formControlName="tcpEnabledInd"/>
+                    <div *ngIf="editForm.get('tcpEnabledInd')!.invalid && (editForm.get('tcpEnabledInd')!.dirty || editForm.get('tcpEnabledInd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpEnabledInd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.tcpParamDataTypeCd" for="field_tcpParamDataTypeCd">Tcp Param Data Type Cd</label>
+                    <input type="text" class="form-control" name="tcpParamDataTypeCd" id="field_tcpParamDataTypeCd"
+                           formControlName="tcpParamDataTypeCd"/>
+                    <div *ngIf="editForm.get('tcpParamDataTypeCd')!.invalid && (editForm.get('tcpParamDataTypeCd')!.dirty || editForm.get('tcpParamDataTypeCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamDataTypeCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamDataTypeCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.tcpParamLength" for="field_tcpParamLength">Tcp Param Length</label>
+                    <input type="text" class="form-control" name="tcpParamLength" id="field_tcpParamLength"
+                           formControlName="tcpParamLength"/>
+                    <div *ngIf="editForm.get('tcpParamLength')!.invalid && (editForm.get('tcpParamLength')!.dirty || editForm.get('tcpParamLength')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamLength')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamLength')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.tcpDefaultValue" for="field_tcpDefaultValue">Tcp Default Value</label>
+                    <input type="text" class="form-control" name="tcpDefaultValue" id="field_tcpDefaultValue"
+                           formControlName="tcpDefaultValue"/>
+                    <div *ngIf="editForm.get('tcpDefaultValue')!.invalid && (editForm.get('tcpDefaultValue')!.dirty || editForm.get('tcpDefaultValue')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpDefaultValue')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpDefaultValue')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 240 }">
+                        This field cannot be longer than 240 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.tcpParamLovValidationInd" for="field_tcpParamLovValidationInd">Tcp Param Lov Validation Ind</label>
+                    <input type="checkbox" class="form-control" name="tcpParamLovValidationInd" id="field_tcpParamLovValidationInd"
+                           formControlName="tcpParamLovValidationInd"/>
+                    <div *ngIf="editForm.get('tcpParamLovValidationInd')!.invalid && (editForm.get('tcpParamLovValidationInd')!.dirty || editForm.get('tcpParamLovValidationInd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamLovValidationInd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.tcpParamLktType" for="field_tcpParamLktType">Tcp Param Lkt Type</label>
+                    <input type="text" class="form-control" name="tcpParamLktType" id="field_tcpParamLktType"
+                           formControlName="tcpParamLktType"/>
+                    <div *ngIf="editForm.get('tcpParamLktType')!.invalid && (editForm.get('tcpParamLktType')!.dirty || editForm.get('tcpParamLktType')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamLktType')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('tcpParamLktType')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodeParams.transactionCode" for="field_transactionCode">Transaction Code</label>
+                    <select class="form-control" id="field_transactionCode" name="transactionCode" formControlName="transactionCode">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="transactionCodesOption.id === editForm.get('transactionCode')!.value?.id ? editForm.get('transactionCode')!.value : transactionCodesOption" *ngFor="let transactionCodesOption of transactioncodes; trackBy: trackById">{{ transactionCodesOption.id }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

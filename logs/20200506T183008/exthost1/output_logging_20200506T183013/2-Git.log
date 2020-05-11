@@ -1,0 +1,1546 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /home/mahi/Desktop/REVAL_M
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git pull --tags origin master
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Onestart-Solutions/REVAL_M.git/'
+> git status -z -u
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git rev-list --count 625b6fd70b4499d7a32f7536d47ec5d0be0d0d45.. -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n2 -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/master'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git pull --tags origin master
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+From https://github.com/Onestart-Solutions/REVAL_M
+ * branch            master     -> FETCH_HEAD
+   4eace9d..ec62007  master     -> origin/master
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+Missing or invalid credentials.
+Skip silent fetch commands
+Missing or invalid credentials.
+Skip silent fetch commands
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Onestart-Solutions/REVAL_M.git/'
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git pull --tags origin development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Onestart-Solutions/REVAL_M.git/'
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.html
+> git cat-file -s 9a7c10af71f4535ad89360efe56cb0faa9ac7558
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.ts
+> git cat-file -s 7cf184bc53a896e10cbb10f02bdd8d320c536a22
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:598268)
+	at T.updateTransientWatchers (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:83870)
+	at e.fire (/snap/code/31/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:517)
+	at e.updateModelState (/snap/code/31/usr/share/code/resources/app/extensions/git/dist/main.js:1:102740)
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.service.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.service.ts
+> git cat-file -s 88fddbcef9cecff77151e9046aed144dc35b39d1
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.html
+> git cat-file -s 9a7c10af71f4535ad89360efe56cb0faa9ac7558
+> git show :src/main/webapp/app/entities/lookups/lookups-delete-dialog.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-delete-dialog.component.html
+> git cat-file -s d42767e269683e0410bda8d06b8ea2811b348fb4
+> git show :src/main/webapp/app/entities/lookups/lookups-delete-dialog.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-delete-dialog.component.ts
+> git cat-file -s c659b31cb3c1f7fc804d4ffac983571ef76c3dad
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups.service.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.service.ts
+> git cat-file -s dc93c454d62879442a77c609c4925d0b17e86a2c
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookups/lookups-delete-dialog.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-delete-dialog.component.html
+> git cat-file -s d42767e269683e0410bda8d06b8ea2811b348fb4
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.module.ts
+> git cat-file -s a55678932ebaebdfc5e7d79cbf60baf3ca744613
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.route.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.route.ts
+> git cat-file -s d3f4cad9d2c2de50739573e5fd29b9167fe51f38
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git cat-file -s 6c5a078f7e51366828eb20f379793843b258e605
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git cat-file -s 6c5a078f7e51366828eb20f379793843b258e605
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git check-ignore -v -z --stdin
+> git show :node_modules/@angular/router/router.d.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/node_modules/@angular/router/router.d.ts
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git cat-file -s 6c5a078f7e51366828eb20f379793843b258e605
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git cat-file -s 6c5a078f7e51366828eb20f379793843b258e605
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git cat-file -s 6c5a078f7e51366828eb20f379793843b258e605
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git cat-file -s 4e1390b0cb8a5c2f644630e5bc49ad8bb839e25a
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-update.component.html
+> git cat-file -s 8e303dac1aa3f46fa5ff7b05594e7b67ec82057b
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-update.component.ts
+> git cat-file -s 4b6872afb0d44c3f37553fab00106f1774f2c544
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git cat-file -s 4e1390b0cb8a5c2f644630e5bc49ad8bb839e25a
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git cat-file -s 6c5a078f7e51366828eb20f379793843b258e605
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git cat-file -s 4e1390b0cb8a5c2f644630e5bc49ad8bb839e25a
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git cat-file -s 6c5a078f7e51366828eb20f379793843b258e605
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git cat-file -s 6c5a078f7e51366828eb20f379793843b258e605
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870

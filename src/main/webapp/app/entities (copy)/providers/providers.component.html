@@ -1,0 +1,85 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="revalApp.providers.home.title">Providers</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-providers" [routerLink]="['/providers/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="revalApp.providers.home.createLabel">
+            Create a new Providers
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="providers?.length === 0">
+        <span jhiTranslate="revalApp.providers.home.notFound">No providers found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="providers?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proNbr">Pro Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proName">Pro Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proShortName">Pro Short Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proStatusCd">Pro Status Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proTypeCd">Pro Type Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proGroupCd">Pro Group Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proLicenseNbr">Pro License Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proLicenseStatusCd">Pro License Status Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proAddress1">Pro Address 1</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proAddress2">Pro Address 2</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proCity">Pro City</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proStateCd">Pro State Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.providers.proZip">Pro Zip</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let providers of providers ;trackBy: trackId">
+                    <td><a [routerLink]="['/providers', providers.id, 'view']">{{ providers.id }}</a></td>
+                    <td>{{ providers.proNbr }}</td>
+                    <td>{{ providers.proName }}</td>
+                    <td>{{ providers.proShortName }}</td>
+                    <td>{{ providers.proStatusCd }}</td>
+                    <td>{{ providers.proTypeCd }}</td>
+                    <td>{{ providers.proGroupCd }}</td>
+                    <td>{{ providers.proLicenseNbr }}</td>
+                    <td>{{ providers.proLicenseStatusCd }}</td>
+                    <td>{{ providers.proAddress1 }}</td>
+                    <td>{{ providers.proAddress2 }}</td>
+                    <td>{{ providers.proCity }}</td>
+                    <td>{{ providers.proStateCd }}</td>
+                    <td>{{ providers.proZip }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/providers', providers.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/providers', providers.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(providers)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

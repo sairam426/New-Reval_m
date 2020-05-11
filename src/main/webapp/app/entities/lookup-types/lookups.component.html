@@ -1,0 +1,94 @@
+<!-- <jhi-lookup-types></jhi-lookup-types> -->
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="revalApp.lookups.home.title">Lookups</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-lookups" [routerLink]="['/lookups/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="revalApp.lookups.home.createLabel">
+            Create a new Lookups
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="lookups?.length === 0">
+        <span jhiTranslate="revalApp.lookups.home.notFound">No lookups found</span>
+    </div>
+    <!-- <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="form-control-label"  >Look Up Type</label>
+                <select class="form-control" id="field_lookUpType" [(ngModel)]="lookupTypeSelected" (change)="lookupChanged()"  name="lookUpType">
+                    <option [ngValue]="null"></option>
+                    <option [ngValue]="lookupTypesOption" *ngFor="let lookupTypesOption of lookuptypes">{{ lookupTypesOption.lktType }}</option>
+                    <option [ngValue]="lookupTypesOption.id === editForm.get('lookUpType')!.value?.id ? editForm.get('lookUpType')!.value : lookupTypesOption" *ngFor="let lookupTypesOption of lookuptypes; trackBy: trackById">{{ lookupTypesOption.id }}</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="form-control-label" for="field_lktDesc">Lkt Desc</label>
+                <input type="text" class="form-control" [(ngModel)]="lookupTypeSelected.lktDesc" name="lktDesc" id="field_lktDesc" readonly/>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="table-responsive" id="entities" *ngIf="lookups?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.lookups.lkcCode">Lkc Code</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.lookups.lkcSubCode">Lkc Sub Code</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.lookups.lkcSort">Lkc Sort</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.lookups.lkcEnabledInd">Lkc Enabled Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.lookups.lkcDesc">Lkc Desc</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.lookups.lookUpType">Look Up Type</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let lookups of lookups ;trackBy: trackId">
+                    <td><a [routerLink]="['/lookups', lookups.id, 'view']">{{ lookups.id }}</a></td>
+                    <td>{{ lookups.lkcCode }}</td>
+                    <td>{{ lookups.lkcSubCode }}</td>
+                    <td>{{ lookups.lkcSort }}</td>
+                    <td>{{ lookups.lkcEnabledInd }}</td>
+                    <td>{{ lookups.lkcDesc }}</td>
+                    <td>
+                        <div *ngIf="lookups.lookUpType">
+                            <a [routerLink]="['/lookup-types', lookups.lookUpType?.id, 'view']" >{{ lookups.lookUpType?.id }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/lookups', lookups.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/lookups', lookups.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(lookups)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

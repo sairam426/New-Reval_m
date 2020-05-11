@@ -1,0 +1,157 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-order-documents-heading" jhiTranslate="revalApp.orderDocuments.home.createOrEditLabel">Create or edit a Order Documents</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoDocumentMimeTypeCd" for="field_odoDocumentMimeTypeCd">Odo Document Mime Type Cd</label>
+                    <input type="text" class="form-control" name="odoDocumentMimeTypeCd" id="field_odoDocumentMimeTypeCd"
+                           formControlName="odoDocumentMimeTypeCd"/>
+                    <div *ngIf="editForm.get('odoDocumentMimeTypeCd')!.invalid && (editForm.get('odoDocumentMimeTypeCd')!.dirty || editForm.get('odoDocumentMimeTypeCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('odoDocumentMimeTypeCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('odoDocumentMimeTypeCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoDocumentTypeCd" for="field_odoDocumentTypeCd">Odo Document Type Cd</label>
+                    <input type="text" class="form-control" name="odoDocumentTypeCd" id="field_odoDocumentTypeCd"
+                           formControlName="odoDocumentTypeCd"/>
+                    <div *ngIf="editForm.get('odoDocumentTypeCd')!.invalid && (editForm.get('odoDocumentTypeCd')!.dirty || editForm.get('odoDocumentTypeCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('odoDocumentTypeCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('odoDocumentTypeCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoExternalStorageLink" for="field_odoExternalStorageLink">Odo External Storage Link</label>
+                    <input type="text" class="form-control" name="odoExternalStorageLink" id="field_odoExternalStorageLink"
+                           formControlName="odoExternalStorageLink"/>
+                    <div *ngIf="editForm.get('odoExternalStorageLink')!.invalid && (editForm.get('odoExternalStorageLink')!.dirty || editForm.get('odoExternalStorageLink')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('odoExternalStorageLink')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 240 }">
+                        This field cannot be longer than 240 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoExternalStorageFileName" for="field_odoExternalStorageFileName">Odo External Storage File Name</label>
+                    <input type="text" class="form-control" name="odoExternalStorageFileName" id="field_odoExternalStorageFileName"
+                           formControlName="odoExternalStorageFileName"/>
+                    <div *ngIf="editForm.get('odoExternalStorageFileName')!.invalid && (editForm.get('odoExternalStorageFileName')!.dirty || editForm.get('odoExternalStorageFileName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('odoExternalStorageFileName')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 240 }">
+                        This field cannot be longer than 240 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoDocumentDueToCd" for="field_odoDocumentDueToCd">Odo Document Due To Cd</label>
+                    <input type="text" class="form-control" name="odoDocumentDueToCd" id="field_odoDocumentDueToCd"
+                           formControlName="odoDocumentDueToCd"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoDocumentDueFromCd" for="field_odoDocumentDueFromCd">Odo Document Due From Cd</label>
+                    <input type="text" class="form-control" name="odoDocumentDueFromCd" id="field_odoDocumentDueFromCd"
+                           formControlName="odoDocumentDueFromCd"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoDocumentDueDt" for="field_odoDocumentDueDt">Odo Document Due Dt</label>
+                    <div class="input-group">
+                        <input id="field_odoDocumentDueDt" type="text" class="form-control" name="odoDocumentDueDt" ngbDatepicker #odoDocumentDueDtDp="ngbDatepicker" formControlName="odoDocumentDueDt"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="odoDocumentDueDtDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoDocumentRcvdDt" for="field_odoDocumentRcvdDt">Odo Document Rcvd Dt</label>
+                    <div class="input-group">
+                        <input id="field_odoDocumentRcvdDt" type="text" class="form-control" name="odoDocumentRcvdDt" ngbDatepicker #odoDocumentRcvdDtDp="ngbDatepicker" formControlName="odoDocumentRcvdDt"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="odoDocumentRcvdDtDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoDocumentStatusCd" for="field_odoDocumentStatusCd">Odo Document Status Cd</label>
+                    <input type="text" class="form-control" name="odoDocumentStatusCd" id="field_odoDocumentStatusCd"
+                           formControlName="odoDocumentStatusCd"/>
+                    <div *ngIf="editForm.get('odoDocumentStatusCd')!.invalid && (editForm.get('odoDocumentStatusCd')!.dirty || editForm.get('odoDocumentStatusCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('odoDocumentStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('odoDocumentStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.odoDocument" for="field_odoDocument">Odo Document</label>
+                    <div>
+                        <div *ngIf="editForm.get('odoDocument')!.value" class="form-text text-danger clearfix">
+                            <a class="pull-left" (click)="openFile(editForm.get('odoDocumentContentType')!.value, editForm.get('odoDocument')!.value)" jhiTranslate="entity.action.open">open</a><br>
+                            <span class="pull-left">{{ editForm.get('odoDocumentContentType')!.value }}, {{ byteSize(editForm.get('odoDocument')!.value) }}</span>
+                            <button type="button" (click)="editForm.patchValue({odoDocument: null});editForm.patchValue({odoDocumentContentType: null});"
+                                    class="btn btn-secondary btn-xs pull-right">
+                                <fa-icon icon="times"></fa-icon>
+                            </button>
+                        </div>
+                        <input type="file" id="file_odoDocument" (change)="setFileData($event, 'odoDocument', false)" jhiTranslate="entity.action.addblob"/>
+                    </div>
+                    <input type="hidden" class="form-control" name="odoDocument" id="field_odoDocument"
+                           formControlName="odoDocument"/>
+                    <input type="hidden" class="form-control" name="odoDocumentContentType" id="field_odoDocumentContentType"
+                           formControlName="odoDocumentContentType" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderDocuments.order" for="field_order">Order</label>
+                    <select class="form-control" id="field_order" name="order" formControlName="order">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="ordersOption.id === editForm.get('order')!.value?.id ? editForm.get('order')!.value : ordersOption" *ngFor="let ordersOption of orders; trackBy: trackById">{{ ordersOption.id }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="systemAccess">
+            <h2><span jhiTranslate="revalApp.systemAccess.detail.title">System Access</span> {{ systemAccess.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.systemAccess.sacAccessKey">Sac Access Key</span></dt>
+                <dd>
+                    <span>{{ systemAccess.sacAccessKey }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.systemAccess.sacAccessTypeCd">Sac Access Type Cd</span></dt>
+                <dd>
+                    <span>{{ systemAccess.sacAccessTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.systemAccess.sacAccessValue">Sac Access Value</span></dt>
+                <dd>
+                    <span>{{ systemAccess.sacAccessValue }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.systemAccess.sacAllowedInd">Sac Allowed Ind</span></dt>
+                <dd>
+                    <span>{{ systemAccess.sacAllowedInd }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/system-access', systemAccess.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

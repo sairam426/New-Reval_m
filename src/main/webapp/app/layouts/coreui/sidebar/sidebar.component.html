@@ -1,0 +1,100 @@
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-item"  routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" href="/">
+                    <div class="nav-icon">
+                        <fa-icon icon="home"></fa-icon>
+                    </div>
+                    <span>Dashboard</span>
+                    <!-- <span class="badge badge-info">NEW</span></a> -->
+                </a>
+            </li>
+            <li class="nav-title">Valuation</li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="orders" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="nav-icon">
+                        <fa-icon icon="list-alt"></fa-icon>
+                    </div>
+                    <span>Orders</span>
+                </a>
+            </li>
+            <li class="nav-title">Maintenance</li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="lookup-types" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="nav-icon">
+                        <fa-icon icon="binoculars"></fa-icon>
+                    </div>
+                    <span>Lookups</span>
+                </a>
+            </li>
+            <li class="nav-title">Administration</li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="admin/user-management" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="nav-icon">
+                        <fa-icon icon="user"></fa-icon>
+                    </div>
+                    <span>User management</span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="admin/metrics" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="nav-icon">
+                        <fa-icon icon="tachometer-alt"></fa-icon>
+                    </div>
+                    <span>Metrics</span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="admin/health" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="nav-icon">
+                        <fa-icon icon="heart"></fa-icon>
+                    </div>
+                    <span>Health</span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="admin/configuration" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="nav-icon">
+                        <fa-icon icon="list"></fa-icon>
+                    </div>
+                    <span>Configuration</span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="admin/docs" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="nav-icon">
+                        <fa-icon icon="book"></fa-icon>
+                    </div>
+                    <span>API</span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="admin/logs" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="nav-icon">
+                        <fa-icon icon="tasks"></fa-icon>
+                    </div>
+                    <span>Logs</span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="admin/audits" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <div class="nav-icon">
+                        <fa-icon icon="bell"></fa-icon>
+                    </div>
+                    <span>Audits</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+</div>

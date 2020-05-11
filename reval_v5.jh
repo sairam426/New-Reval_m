@@ -1,0 +1,321 @@
+application {
+  config {
+    baseName reval,
+    applicationType monolith,
+    packageName com.jhipster.reval.ui,
+	serverPort 9100,
+    serviceDiscoveryType eureka,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    cacheProvider hazelcast,
+    buildTool gradle,
+    clientFramework angularX,
+    useSass true,
+    testFrameworks [protractor, cucumber]
+  }
+  entities *
+}
+  
+entity Orders {
+   ordNumber String required maxlength(30),
+   ordStageCd String required maxlength(30),
+   ordOrgOrderStatusCd String required maxlength(30),
+   ordCmpOrderStatusCd String required maxlength(30),
+   ordProOrderStatusCd String required maxlength(30),
+   ordCmpNbr String maxlength(30),
+   ordBrnNbr String maxlength(30),
+   ordProNbr String maxlength(30),
+   ordProductCode String maxlength(30),
+   ordOriginalValueAmt BigDecimal required,
+   ordParentTrackingNbr String maxlength(50),
+   ordUserNbr String maxlength(30),
+   ordOrderDt LocalDate required,
+   ordRushRequestDueDt LocalDate,
+   ordOrgInstructions String maxlength(240),
+   ordOrgOtherInstructions String maxlength(240),
+   ordMultiOrderInd Boolean required,
+   ordOrgDuedate LocalDate,
+   ordProDuedate LocalDate,
+   
+   ordUcdpDataFnmaSubmitToUcdpInd Boolean required,
+   ordUcdpDataFnmaServicerNbr String maxlength(30),
+   ordUcdpDataFhlmcSubmitToUcdpInd Boolean required,
+   ordUcdpDataFhlmcIdentificationNbr String maxlength(30),
+   ordUcdpDataUcdpBussinessUnitNbr String maxlength(30),
+   ordUcdpSdFnamaDocumentId String maxlength(30),
+   ordUcdpSdFnmaSubmissionStatusId String maxlength(80),
+   ordUcdpSdFhlmcDocumentFileCd String maxlength(80),
+   ordUcdpSdEadSubmissionStatusCd String maxlength(80),
+   ordUcdpFinalSubmissionDt  LocalDate,
+   
+   ordLoanNbr String maxlength(30),
+   ordloanOldLoanNbr String maxlength(30),
+   ordLoanProgram String maxlength(80),
+   ordLoanPurpose String maxlength(80),
+   ordLoanType String maxlength(80),
+   ordLoanAmt BigDecimal required,
+   ordLoanQualifyingValueAmt BigDecimal required,
+   ordLoanSalesPriceAmt BigDecimal required,
+   ordLoanBorrowerLastName String maxlength(30),
+   ordLoanBorrowerFirstName String maxlength(30),
+   ordLoanBorrowerMiddleName String maxlength(30),
+   ordLoanBorrowerIsCoBorrowerInd Boolean required,
+   ordLoanFhaCaseNbr String maxlength(30),
+   ordLoanDeedRestrictionInd Boolean required,
+   ordLoanEstimatedCloseDt LocalDate,
+   ordLoanHpmlInd Boolean required,
+   ordLoanIsNewConstructionInd Boolean required,
+   ordLoanCustomerSegmentCode String maxlength(30),
+   ordLoanNonSubjectPropertyInd Boolean required,
+   ordLoanBorrowerRequestedCloseDt LocalDate,
+   
+   ordPropertyTypeCd String maxlength(30),
+   ordPropertyAddress1 String maxlength(80),
+   ordPropertyAddress2 String maxlength(80),
+   ordPropertyCity String maxlength(80),
+   ordPropertyStateCd String maxlength(30),
+   ordPropertyZip String maxlength(30),
+   ordPropertyCounty String maxlength(80),
+   ordPropertyLatitue String maxlength(80),
+   ordPropertyLongitude String maxlength(80),
+   ordPropertyProjectName String maxlength(80),
+
+   ordContact1TypeCd String,
+   ordContact1Name String maxlength(120),
+   ordContact1WorkPhone Long,
+   ordContact1HomePhone Long,
+   ordContact1CellPhone Long,
+   ordContact1OtherCellPhone Long,
+   ordContact1Email String maxlength(80),
+   ordContact1OtherEmail String maxlength(80),
+   ordContact2TypeCd String maxlength(30),
+   ordContact2Name String maxlength(120),
+   ordContact2WorkPhone Long,
+   ordContact2HomePhone Long,
+   ordContact2CellPhone Long,
+   ordContact2OtherCellPhone Long,
+   ordContact2Email String maxlength(80),
+   ordContact2OtherEmail String maxlength(80),
+   ordContact3TypeCd String maxlength(30),
+   ordContact3Name String maxlength(120),
+   ordContact3WorkPhone Long,
+   ordContact3HomePhone Long,
+   ordContact3CellPhone Long,
+   ordContact3OtherCellPhone Long,
+   ordContact3Email String maxlength(80),
+   ordContact3OtherEmail String maxlength(80),
+
+   ordRequestRrStatusCd String maxlength(30),
+   ordRequestRrVendorAppraisalId String maxlength(80),
+   ordRequestRrvendorAppraisalDraftRcvdDt LocalDate,
+   ordRequestRrXmlFormId String maxlength(80),
+   ordRequestRrPdfFormId String maxlength(80),
+   ordRequestRrApprFileDataSourcCd String maxlength(30),
+   ordRequestRrReportValueAmt BigDecimal required,
+   ordRequestRrAppraisalCompanyName String maxlength(80),
+   ordRequestRrvendorName String maxlength(80),
+   ordRequestRrvendorLicenseNbr String maxlength(50),
+   ordRequestRrvendorLicenseStateCd String maxlength(30),
+
+   ordValuationCompletedProduct String maxlength(30),
+   ordValuationDueToClientDt LocalDate,
+   ordValuationReportRecivedDt LocalDate,
+   ordValuationCompletionDt LocalDate,
+   ordValuationReportStatusCd String maxlength(30), 
+   ordValuationAppraisedValueAmt BigDecimal required,
+   ordValuationBpoMarketValueAmt BigDecimal required,
+   ordValuationBpoAsIsAmt BigDecimal required,
+   ordValuationBpoAsRepairedValueAmt BigDecimal required,
+   ordValuationRedFlagCode String maxlength(30),
+   ordValuationRedFlagDesc String maxlength(80),
+   ordValuationAmcAppraisalId String maxlength(80),
+   ordValuationFinalReviewId Long,
+
+   ordReviewRecommendedValueAmt BigDecimal required,
+   ordReviewDt LocalDate,
+   ordReviewRecommendedActionCd String maxlength(80),
+   ordReviewReviewerDecisionCd String maxlength(80),
+   ordReviewReviewScore String maxlength(80),
+   ordReviewFormUsed String maxlength(80),
+   ordReviewProviderOnWatchListInd Boolean required,
+   ordReviewCuredValueAmt BigDecimal required,
+   ordReviewFinalRecommendedActionCd String maxlength(80)
+}
+ 
+entity OrderComments{
+   ocmCommentTypeCd String required maxlength(30),
+   ocmCommentSubTypeCd String required maxlength(30),
+   ocmCommentBy String required maxlength(30),
+   ocmCommentDate LocalDate required,
+   ocmCommentImpInd Boolean required,
+   ocmComment String required maxlength(240)
+}
+ 
+entity OrderDocuments{
+	odoDocumentMimeTypeCd String required maxlength(30),
+	odoDocumentTypeCd String required maxlength(30),
+	odoExternalStorageLink String maxlength(240),
+	odoExternalStorageFileName String maxlength(240),
+	odoDocumentDueToCd  String,
+	odoDocumentDueFromCd String,
+	odoDocumentDueDt LocalDate,
+	odoDocumentRcvdDt LocalDate,
+	odoDocumentStatusCd String required maxlength(30),
+	odoDocument Blob
+}
+
+relationship OneToMany {
+  Orders{comments} to OrderComments{order},
+  Orders{documents} to OrderDocuments{order}
+}
+
+// relationship OneToOne {
+//   Orders to OrderLenderInfo{ordlenderid},
+//   Orders to OrderLoanDetails{ordLoanid},
+//   Orders to OrderContact{ordContactid},
+//   Orders to OrderPropertyInf{ordPrptyid},
+//   Orders to OrderRequestReport{ordRevRepid},
+//   Orders to OrderReview{ordReviewId},
+//   Orders to OrderUCDP{ordUcdid},
+//   Orders to OrderValuation{ordValuid},
+//   }
+
+ 
+entity Transactions{
+	txnEntityId Long required,
+	txnEntityNbr String required,
+	txnTcdCode String required,
+	txnPostDt LocalDate required,
+	txnStatusCd String required maxlength(30)
+}
+
+entity TransactionDetails{
+	txdPrmCode String required maxlength(30),
+	txdValue String maxlength(240)
+}
+
+relationship OneToMany {
+  Transactions{txnDetails} to TransactionDetails{transaction}
+}
+
+ 
+entity LookupTypes{
+   lktType String required maxlength(30),
+   lktDesc String required maxlength(80)   
+ }
+entity Lookups{
+   lkcCode String required maxlength(30),
+   lkcSubCode String required maxlength(30),
+   lkcSort String required maxlength(30),
+   lkcEnabledInd Boolean required,
+   lkcDesc String maxlength(80)
+}
+
+relationship ManyToOne {
+  Lookups{lookUpType} to LookupTypes
+}
+
+ 
+entity TransactionCodes{
+    tcdCode String,
+    tcdEntityGroupCd String,
+    tcdDesc String,
+    tcdEnabledInd Boolean
+}
+ 
+entity TransactionCodeParams{
+    tcpTcdCode String required maxlength(30),
+    tcpParamName String required maxlength(30),
+    tcpParamDesc String required maxlength(80),
+    tcpEnabledInd Boolean required,
+    tcpParamDataTypeCd String required maxlength(30),
+    tcpParamLength String required maxlength(30),
+    tcpDefaultValue String required maxlength(240),
+    tcpParamLovValidationInd Boolean required,
+    tcpParamLktType String required maxlength(30)
+}
+
+relationship OneToMany {
+  TransactionCodes{txnCodeParams} to TransactionCodeParams{transactionCode}
+}
+
+
+entity SystemAccess {
+    sacAccessKey String required maxlength(240),
+    sacAccessTypeCd String required maxlength(30),
+    sacAccessValue String required maxlength(80),
+    sacAllowedInd Boolean required
+}
+entity Organizations {
+    orgNbr String required maxlength(30),
+    orgName String required maxlength(30),
+    orgShortName String required maxlength(30),
+    orgAddress1 String,
+    orgAddress2 String,
+    orgCity String,
+    orgStateCd String,
+    orgZip String
+}
+	
+entity Companies {
+    cmpNbr String required maxlength(30),
+    cmpName String required maxlength(80),
+	cmpServiceTypeCd String maxlength(30),
+    cmpShortName String required maxlength(30),
+    cmpStatusCd String required maxlength(30),
+    cmpTypeCd String required maxlength(30),
+    cmpAddress1 String required maxlength(80),
+    cmpAddress2 String required maxlength(80),
+    cmpCity String required maxlength(30),
+    cmpStateCd String required maxlength(30),
+    cmpZip String required maxlength(30),
+	cmpEnabledInd Boolean required
+}
+
+entity Branches {
+	brnNbr String required maxlength(30),
+	brnName String required maxlength(80),
+	brnCode String required maxlength(30),
+	brnShortName String required maxlength(30),
+	brnAddress1 String required maxlength(80),
+    brnAddress2 String required maxlength(80),
+    brnCity String required maxlength(80),
+    brnStateCd String required maxlength(30),
+    brnZip String required maxlength(30),
+	brnEnabledInd Boolean required,
+	brnRegioinCd String required maxlength(30),
+	brnServiceTypeCd String maxlength(30)
+}
+
+relationship ManyToOne {
+  Branches{company} to Companies
+}
+
+entity Providers{	
+	proNbr String required maxlength(30),
+    proName String required maxlength(30),
+    proShortName String required maxlength(80),
+    proStatusCd String required maxlength(30),
+    proTypeCd String,
+    proGroupCd String,
+    proLicenseNbr String,
+    proLicenseStatusCd String,
+    proAddress1 String,
+    proAddress2 String,
+    proCity String,
+    proStateCd String,
+    proZip Long
+}
+
+filter Orders, OrderComments, OrderDocuments, Lookups, LookupTypes, SystemAccess, Transactions, TransactionDetails
+
+service * with serviceImpl
+
+
+deployment {
+  deploymentType docker-compose
+  dockerRepositoryName "docker.io/venkatesh82/oss"
+  dockerPushCommand	"docker push"
+  appsFolders [../reval]
+  consoleOptions [zipkin]
+}

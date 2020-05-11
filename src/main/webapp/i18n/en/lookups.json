@@ -1,0 +1,27 @@
+{
+  "revalApp": {
+    "lookups": {
+      "home": {
+        "title": "Lookups",
+        "createLabel": "Create a new Lookups",
+        "createOrEditLabel": "Create or edit a Lookups",
+        "notFound": "No Lookups found"
+      },
+      "created": "A new Lookups is created with identifier {{ param }}",
+      "updated": "A Lookups is updated with identifier {{ param }}",
+      "deleted": "A Lookups is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Lookups {{ id }}?"
+      },
+      "detail": {
+        "title": "Lookups"
+      },
+      "lkcCode": "Lkc Code",
+      "lkcSubCode": "Lkc Sub Code",
+      "lkcSort": "Lkc Sort",
+      "lkcEnabledInd": "Lkc Enabled Ind",
+      "lkcDesc": "Lkc Desc",
+      "lookUpType": "Look Up Type"
+    }
+  }
+}

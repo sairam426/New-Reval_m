@@ -1,0 +1,52 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="lookups">
+            <h2><span jhiTranslate="revalApp.lookups.detail.title">Lookups</span> {{ lookups.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.lookups.lkcCode">Lkc Code</span></dt>
+                <dd>
+                    <span>{{ lookups.lkcCode }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.lookups.lkcSubCode">Lkc Sub Code</span></dt>
+                <dd>
+                    <span>{{ lookups.lkcSubCode }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.lookups.lkcSort">Lkc Sort</span></dt>
+                <dd>
+                    <span>{{ lookups.lkcSort }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.lookups.lkcEnabledInd">Lkc Enabled Ind</span></dt>
+                <dd>
+                    <span>{{ lookups.lkcEnabledInd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.lookups.lkcDesc">Lkc Desc</span></dt>
+                <dd>
+                    <span>{{ lookups.lkcDesc }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.lookups.lookUpType">Look Up Type</span></dt>
+                <dd>
+                    <div *ngIf="lookups.lookUpType">
+                        <a [routerLink]="['/lookup-types', lookups.lookUpType?.id, 'view']">{{ lookups.lookUpType?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/lookups', lookups.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

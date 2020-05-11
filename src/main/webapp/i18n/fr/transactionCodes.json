@@ -1,0 +1,26 @@
+{
+  "revalApp": {
+    "transactionCodes": {
+      "home": {
+        "title": "TransactionCodes",
+        "createLabel": "Créer un nouveau Transaction Codes",
+        "createOrEditLabel": "Créer ou éditer un Transaction Codes",
+        "notFound": "Aucun Transaction Codes trouvé"
+      },
+      "created": "Un nouveau Transaction Codes a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Transaction Codes avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Transaction Codes avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Transaction Codes {{ id }} ?"
+      },
+      "detail": {
+        "title": "Transaction Codes"
+      },
+      "tcdCode": "Tcd Code",
+      "tcdEntityGroupCd": "Tcd Entity Group Cd",
+      "tcdDesc": "Tcd Desc",
+      "tcdEnabledInd": "Tcd Enabled Ind",
+      "txnCodeParams": "Txn Code Params"
+    }
+  }
+}

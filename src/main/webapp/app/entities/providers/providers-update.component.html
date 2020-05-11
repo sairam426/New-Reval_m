@@ -1,0 +1,144 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-providers-heading" jhiTranslate="revalApp.providers.home.createOrEditLabel">Create or edit a Providers</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proNbr" for="field_proNbr">Pro Nbr</label>
+                    <input type="text" class="form-control" name="proNbr" id="field_proNbr"
+                           formControlName="proNbr"/>
+                    <div *ngIf="editForm.get('proNbr')!.invalid && (editForm.get('proNbr')!.dirty || editForm.get('proNbr')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('proNbr')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('proNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proName" for="field_proName">Pro Name</label>
+                    <input type="text" class="form-control" name="proName" id="field_proName"
+                           formControlName="proName"/>
+                    <div *ngIf="editForm.get('proName')!.invalid && (editForm.get('proName')!.dirty || editForm.get('proName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('proName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('proName')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proShortName" for="field_proShortName">Pro Short Name</label>
+                    <input type="text" class="form-control" name="proShortName" id="field_proShortName"
+                           formControlName="proShortName"/>
+                    <div *ngIf="editForm.get('proShortName')!.invalid && (editForm.get('proShortName')!.dirty || editForm.get('proShortName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('proShortName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('proShortName')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 80 }">
+                        This field cannot be longer than 80 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proStatusCd" for="field_proStatusCd">Pro Status Cd</label>
+                    <input type="text" class="form-control" name="proStatusCd" id="field_proStatusCd"
+                           formControlName="proStatusCd"/>
+                    <div *ngIf="editForm.get('proStatusCd')!.invalid && (editForm.get('proStatusCd')!.dirty || editForm.get('proStatusCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('proStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('proStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proTypeCd" for="field_proTypeCd">Pro Type Cd</label>
+                    <input type="text" class="form-control" name="proTypeCd" id="field_proTypeCd"
+                           formControlName="proTypeCd"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proGroupCd" for="field_proGroupCd">Pro Group Cd</label>
+                    <input type="text" class="form-control" name="proGroupCd" id="field_proGroupCd"
+                           formControlName="proGroupCd"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proLicenseNbr" for="field_proLicenseNbr">Pro License Nbr</label>
+                    <input type="text" class="form-control" name="proLicenseNbr" id="field_proLicenseNbr"
+                           formControlName="proLicenseNbr"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proLicenseStatusCd" for="field_proLicenseStatusCd">Pro License Status Cd</label>
+                    <input type="text" class="form-control" name="proLicenseStatusCd" id="field_proLicenseStatusCd"
+                           formControlName="proLicenseStatusCd"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proAddress1" for="field_proAddress1">Pro Address 1</label>
+                    <input type="text" class="form-control" name="proAddress1" id="field_proAddress1"
+                           formControlName="proAddress1"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proAddress2" for="field_proAddress2">Pro Address 2</label>
+                    <input type="text" class="form-control" name="proAddress2" id="field_proAddress2"
+                           formControlName="proAddress2"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proCity" for="field_proCity">Pro City</label>
+                    <input type="text" class="form-control" name="proCity" id="field_proCity"
+                           formControlName="proCity"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proStateCd" for="field_proStateCd">Pro State Cd</label>
+                    <input type="text" class="form-control" name="proStateCd" id="field_proStateCd"
+                           formControlName="proStateCd"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.providers.proZip" for="field_proZip">Pro Zip</label>
+                    <input type="number" class="form-control" name="proZip" id="field_proZip"
+                           formControlName="proZip"/>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

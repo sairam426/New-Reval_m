@@ -1,0 +1,83 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="revalApp.companies.home.title">Companies</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-companies" [routerLink]="['/companies/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="revalApp.companies.home.createLabel">
+            Create a new Companies
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="companies?.length === 0">
+        <span jhiTranslate="revalApp.companies.home.notFound">No companies found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="companies?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpNbr">Cmp Nbr</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpName">Cmp Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpServiceTypeCd">Cmp Service Type Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpShortName">Cmp Short Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpStatusCd">Cmp Status Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpTypeCd">Cmp Type Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpAddress1">Cmp Address 1</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpAddress2">Cmp Address 2</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpCity">Cmp City</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpStateCd">Cmp State Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpZip">Cmp Zip</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.companies.cmpEnabledInd">Cmp Enabled Ind</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let companies of companies ;trackBy: trackId">
+                    <td><a [routerLink]="['/companies', companies.id, 'view']">{{ companies.id }}</a></td>
+                    <td>{{ companies.cmpNbr }}</td>
+                    <td>{{ companies.cmpName }}</td>
+                    <td>{{ companies.cmpServiceTypeCd }}</td>
+                    <td>{{ companies.cmpShortName }}</td>
+                    <td>{{ companies.cmpStatusCd }}</td>
+                    <td>{{ companies.cmpTypeCd }}</td>
+                    <td>{{ companies.cmpAddress1 }}</td>
+                    <td>{{ companies.cmpAddress2 }}</td>
+                    <td>{{ companies.cmpCity }}</td>
+                    <td>{{ companies.cmpStateCd }}</td>
+                    <td>{{ companies.cmpZip }}</td>
+                    <td>{{ companies.cmpEnabledInd }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/companies', companies.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/companies', companies.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(companies)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+{
+  "revalApp": {
+    "transactionCodeParams": {
+      "home": {
+        "title": "TransactionCodeParams",
+        "createLabel": "Créer un nouveau Transaction Code Params",
+        "createOrEditLabel": "Créer ou éditer un Transaction Code Params",
+        "notFound": "Aucun Transaction Code Params trouvé"
+      },
+      "created": "Un nouveau Transaction Code Params a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Transaction Code Params avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Transaction Code Params avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Transaction Code Params {{ id }} ?"
+      },
+      "detail": {
+        "title": "Transaction Code Params"
+      },
+      "tcpTcdCode": "Tcp Tcd Code",
+      "tcpParamName": "Tcp Param Name",
+      "tcpParamDesc": "Tcp Param Desc",
+      "tcpEnabledInd": "Tcp Enabled Ind",
+      "tcpParamDataTypeCd": "Tcp Param Data Type Cd",
+      "tcpParamLength": "Tcp Param Length",
+      "tcpDefaultValue": "Tcp Default Value",
+      "tcpParamLovValidationInd": "Tcp Param Lov Validation Ind",
+      "tcpParamLktType": "Tcp Param Lkt Type",
+      "transactionCode": "Transaction Code"
+    }
+  }
+}

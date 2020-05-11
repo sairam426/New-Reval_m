@@ -1,0 +1,78 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="providers">
+            <h2><span jhiTranslate="revalApp.providers.detail.title">Providers</span> {{ providers.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.providers.proNbr">Pro Nbr</span></dt>
+                <dd>
+                    <span>{{ providers.proNbr }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proName">Pro Name</span></dt>
+                <dd>
+                    <span>{{ providers.proName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proShortName">Pro Short Name</span></dt>
+                <dd>
+                    <span>{{ providers.proShortName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proStatusCd">Pro Status Cd</span></dt>
+                <dd>
+                    <span>{{ providers.proStatusCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proTypeCd">Pro Type Cd</span></dt>
+                <dd>
+                    <span>{{ providers.proTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proGroupCd">Pro Group Cd</span></dt>
+                <dd>
+                    <span>{{ providers.proGroupCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proLicenseNbr">Pro License Nbr</span></dt>
+                <dd>
+                    <span>{{ providers.proLicenseNbr }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proLicenseStatusCd">Pro License Status Cd</span></dt>
+                <dd>
+                    <span>{{ providers.proLicenseStatusCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proAddress1">Pro Address 1</span></dt>
+                <dd>
+                    <span>{{ providers.proAddress1 }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proAddress2">Pro Address 2</span></dt>
+                <dd>
+                    <span>{{ providers.proAddress2 }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proCity">Pro City</span></dt>
+                <dd>
+                    <span>{{ providers.proCity }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proStateCd">Pro State Cd</span></dt>
+                <dd>
+                    <span>{{ providers.proStateCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.providers.proZip">Pro Zip</span></dt>
+                <dd>
+                    <span>{{ providers.proZip }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/providers', providers.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

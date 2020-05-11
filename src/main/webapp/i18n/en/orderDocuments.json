@@ -1,0 +1,32 @@
+{
+  "revalApp": {
+    "orderDocuments": {
+      "home": {
+        "title": "Order Documents",
+        "createLabel": "Create a new Order Documents",
+        "createOrEditLabel": "Create or edit a Order Documents",
+        "notFound": "No Order Documents found"
+      },
+      "created": "A new Order Documents is created with identifier {{ param }}",
+      "updated": "A Order Documents is updated with identifier {{ param }}",
+      "deleted": "A Order Documents is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Order Documents {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Documents"
+      },
+      "odoDocumentMimeTypeCd": "Odo Document Mime Type Cd",
+      "odoDocumentTypeCd": "Odo Document Type Cd",
+      "odoExternalStorageLink": "Odo External Storage Link",
+      "odoExternalStorageFileName": "Odo External Storage File Name",
+      "odoDocumentDueToCd": "Odo Document Due To Cd",
+      "odoDocumentDueFromCd": "Odo Document Due From Cd",
+      "odoDocumentDueDt": "Odo Document Due Dt",
+      "odoDocumentRcvdDt": "Odo Document Rcvd Dt",
+      "odoDocumentStatusCd": "Odo Document Status Cd",
+      "odoDocument": "Odo Document",
+      "order": "Order"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="orderDocuments">
+            <h2><span jhiTranslate="revalApp.orderDocuments.detail.title">Order Documents</span> {{ orderDocuments.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoDocumentMimeTypeCd">Odo Document Mime Type Cd</span></dt>
+                <dd>
+                    <span>{{ orderDocuments.odoDocumentMimeTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoDocumentTypeCd">Odo Document Type Cd</span></dt>
+                <dd>
+                    <span>{{ orderDocuments.odoDocumentTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoExternalStorageLink">Odo External Storage Link</span></dt>
+                <dd>
+                    <span>{{ orderDocuments.odoExternalStorageLink }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoExternalStorageFileName">Odo External Storage File Name</span></dt>
+                <dd>
+                    <span>{{ orderDocuments.odoExternalStorageFileName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoDocumentDueToCd">Odo Document Due To Cd</span></dt>
+                <dd>
+                    <span>{{ orderDocuments.odoDocumentDueToCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoDocumentDueFromCd">Odo Document Due From Cd</span></dt>
+                <dd>
+                    <span>{{ orderDocuments.odoDocumentDueFromCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoDocumentDueDt">Odo Document Due Dt</span></dt>
+                <dd>
+                    <span>{{ orderDocuments.odoDocumentDueDt }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoDocumentRcvdDt">Odo Document Rcvd Dt</span></dt>
+                <dd>
+                    <span>{{ orderDocuments.odoDocumentRcvdDt }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoDocumentStatusCd">Odo Document Status Cd</span></dt>
+                <dd>
+                    <span>{{ orderDocuments.odoDocumentStatusCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.odoDocument">Odo Document</span></dt>
+                <dd>
+                    <div *ngIf="orderDocuments.odoDocument">
+                        <a (click)="openFile(orderDocuments?.odoDocumentContentType!, orderDocuments?.odoDocument)" jhiTranslate="entity.action.open">open</a>
+                        {{ orderDocuments.odoDocumentContentType }}, {{ byteSize(orderDocuments.odoDocument) }}
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderDocuments.order">Order</span></dt>
+                <dd>
+                    <div *ngIf="orderDocuments.order">
+                        <a [routerLink]="['/orders', orderDocuments.order?.id, 'view']">{{ orderDocuments.order?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/order-documents', orderDocuments.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

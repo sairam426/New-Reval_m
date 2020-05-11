@@ -1,0 +1,329 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /home/mahi/Desktop/REVAL_M
+> git fetch
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/32/usr/share/code/resources/app/extensions/git/dist/main.js:1:604919)
+	at T.updateTransientWatchers (/snap/code/32/usr/share/code/resources/app/extensions/git/dist/main.js:1:83965)
+	at e.fire (/snap/code/32/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:87)
+	at e.updateModelState (/snap/code/32/usr/share/code/resources/app/extensions/git/dist/main.js:1:103179)
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+Missing or invalid credentials.
+Skip silent fetch commands
+Missing or invalid credentials.
+Skip silent fetch commands
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/Onestart-Solutions/REVAL_M.git/'
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse development
+> git rev-parse --symbolic-full-name development@{u}
+> git rev-list --left-right development...refs/remotes/origin/development
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+Failed to watch ref '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development', is most likely packed.
+Error: ENOENT: no such file or directory, watch '/home/mahi/Desktop/REVAL_M/.git/refs/remotes/origin/development'
+	at FSWatcher.start (internal/fs/watchers.js:165:26)
+	at Object.watch (fs.js:1270:11)
+	at Object.t.watch (/snap/code/32/usr/share/code/resources/app/extensions/git/dist/main.js:1:604919)
+	at T.updateTransientWatchers (/snap/code/32/usr/share/code/resources/app/extensions/git/dist/main.js:1:83965)
+	at e.fire (/snap/code/32/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:87)
+	at e.updateModelState (/snap/code/32/usr/share/code/resources/app/extensions/git/dist/main.js:1:103179)
+	at processTicksAndRejections (internal/process/task_queues.js:85:5)
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git cat-file -s 4e1390b0cb8a5c2f644630e5bc49ad8bb839e25a
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git cat-file -s 4e1390b0cb8a5c2f644630e5bc49ad8bb839e25a
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.component.ts
+> git cat-file -s 4e1390b0cb8a5c2f644630e5bc49ad8bb839e25a
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/shared/shared.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/shared/shared.module.ts
+> git cat-file -s 5276e79294ca71d131af93cb10ce791275e4a095
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/shared/shared-libs.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/shared/shared-libs.module.ts
+> git cat-file -s 422d96fce4a2d969d2e63f409852a9c653a2b4fe
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups.service.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.service.ts
+> git cat-file -s dc93c454d62879442a77c609c4925d0b17e86a2c
+> git show :src/main/webapp/app/entities/lookups/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.ts
+> git cat-file -s 2744a52512556500dfcac8869bcaae77eb822f98
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookups/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.module.ts
+> git cat-file -s a55678932ebaebdfc5e7d79cbf60baf3ca744613
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/shared/shared.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/shared/shared.module.ts
+> git cat-file -s 5276e79294ca71d131af93cb10ce791275e4a095
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.html
+> git cat-file -s 9a7c10af71f4535ad89360efe56cb0faa9ac7558
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-delete-dialog.component.ts
+> git cat-file -s 7cf184bc53a896e10cbb10f02bdd8d320c536a22
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.ts
+> git cat-file -s c9117844f0e0cc2fd3f5ab8d0a14fca46a86f566
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/entity.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/entity.module.ts
+> git cat-file -s 26cc1cef15df62ecff84095bb398bb7a13e9523a
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups-delete-dialog.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups-delete-dialog.component.html
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/entity.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/entity.module.ts
+> git cat-file -s 26cc1cef15df62ecff84095bb398bb7a13e9523a
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookups/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.module.ts
+> git cat-file -s a55678932ebaebdfc5e7d79cbf60baf3ca744613
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.module.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/entity.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/entity.module.ts
+> git cat-file -s 26cc1cef15df62ecff84095bb398bb7a13e9523a
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.component.html
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types.module.ts
+> git cat-file -s a8a180fee601b3e35a0c12ed075573b67661537c
+> git show :src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git show :src/main/webapp/app/entities/entity.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/entity.module.ts
+> git cat-file -s 26cc1cef15df62ecff84095bb398bb7a13e9523a
+> git show :src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups.service.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.service.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.route.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups-detail.component.html
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups-update.component.html
+> git show :src/main/webapp/app/entities/lookup-types/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups-update.component.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups-detail.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups-detail.component.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.component.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups.service.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.service.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.component.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookups-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups-detail.component.html
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-update.component.html
+> git cat-file -s 8e303dac1aa3f46fa5ff7b05594e7b67ec82057b
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookups.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.component.ts
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.html
+> git cat-file -s 0c291ea068883f9ab6b4b98e6391793769d61229
+> git show :src/main/webapp/app/entities/lookup-types/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.component.html
+> git show :src/main/webapp/app/entities/lookups/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookups/lookups.component.html
+> git cat-file -s fd45c61e0e54902a8d655c164022047c46cea870
+> git show :src/main/webapp/app/entities/lookup-types/lookups.component.html
+> git ls-files --stage -- /home/mahi/Desktop/REVAL_M/src/main/webapp/app/entities/lookup-types/lookups.component.html

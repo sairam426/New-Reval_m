@@ -1,0 +1,69 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="revalApp.transactionDetails.home.title">Transaction Details</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-transaction-details" [routerLink]="['/transaction-details/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="revalApp.transactionDetails.home.createLabel">
+            Create a new Transaction Details
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="transactionDetails?.length === 0">
+        <span jhiTranslate="revalApp.transactionDetails.home.notFound">No transactionDetails found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="transactionDetails?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionDetails.txdPrmCode">Txd Prm Code</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionDetails.txdValue">Txd Value</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionDetails.transaction">Transaction</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let transactionDetails of transactionDetails ;trackBy: trackId">
+                    <td><a [routerLink]="['/transaction-details', transactionDetails.id, 'view']">{{ transactionDetails.id }}</a></td>
+                    <td>{{ transactionDetails.txdPrmCode }}</td>
+                    <td>{{ transactionDetails.txdValue }}</td>
+                    <td>
+                        <div *ngIf="transactionDetails.transaction">
+                            <a [routerLink]="['/transactions', transactionDetails.transaction?.id, 'view']" >{{ transactionDetails.transaction?.id }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/transaction-details', transactionDetails.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/transaction-details', transactionDetails.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(transactionDetails)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

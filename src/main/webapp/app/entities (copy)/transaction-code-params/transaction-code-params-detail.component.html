@@ -1,0 +1,68 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="transactionCodeParams">
+            <h2><span jhiTranslate="revalApp.transactionCodeParams.detail.title">Transaction Code Params</span> {{ transactionCodeParams.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.tcpTcdCode">Tcp Tcd Code</span></dt>
+                <dd>
+                    <span>{{ transactionCodeParams.tcpTcdCode }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.tcpParamName">Tcp Param Name</span></dt>
+                <dd>
+                    <span>{{ transactionCodeParams.tcpParamName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.tcpParamDesc">Tcp Param Desc</span></dt>
+                <dd>
+                    <span>{{ transactionCodeParams.tcpParamDesc }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.tcpEnabledInd">Tcp Enabled Ind</span></dt>
+                <dd>
+                    <span>{{ transactionCodeParams.tcpEnabledInd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.tcpParamDataTypeCd">Tcp Param Data Type Cd</span></dt>
+                <dd>
+                    <span>{{ transactionCodeParams.tcpParamDataTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.tcpParamLength">Tcp Param Length</span></dt>
+                <dd>
+                    <span>{{ transactionCodeParams.tcpParamLength }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.tcpDefaultValue">Tcp Default Value</span></dt>
+                <dd>
+                    <span>{{ transactionCodeParams.tcpDefaultValue }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.tcpParamLovValidationInd">Tcp Param Lov Validation Ind</span></dt>
+                <dd>
+                    <span>{{ transactionCodeParams.tcpParamLovValidationInd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.tcpParamLktType">Tcp Param Lkt Type</span></dt>
+                <dd>
+                    <span>{{ transactionCodeParams.tcpParamLktType }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactionCodeParams.transactionCode">Transaction Code</span></dt>
+                <dd>
+                    <div *ngIf="transactionCodeParams.transactionCode">
+                        <a [routerLink]="['/transaction-codes', transactionCodeParams.transactionCode?.id, 'view']">{{ transactionCodeParams.transactionCode?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/transaction-code-params', transactionCodeParams.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

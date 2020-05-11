@@ -1,0 +1,106 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-lookups-heading" jhiTranslate="revalApp.lookups.home.createOrEditLabel">Create or edit a Lookups</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.lookups.lkcCode" for="field_lkcCode">Lkc Code</label>
+                    <input type="text" class="form-control" name="lkcCode" id="field_lkcCode"
+                           formControlName="lkcCode"/>
+                    <div *ngIf="editForm.get('lkcCode')!.invalid && (editForm.get('lkcCode')!.dirty || editForm.get('lkcCode')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lkcCode')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lkcCode')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.lookups.lkcSubCode" for="field_lkcSubCode">Lkc Sub Code</label>
+                    <input type="text" class="form-control" name="lkcSubCode" id="field_lkcSubCode"
+                           formControlName="lkcSubCode"/>
+                    <div *ngIf="editForm.get('lkcSubCode')!.invalid && (editForm.get('lkcSubCode')!.dirty || editForm.get('lkcSubCode')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lkcSubCode')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lkcSubCode')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.lookups.lkcSort" for="field_lkcSort">Lkc Sort</label>
+                    <input type="text" class="form-control" name="lkcSort" id="field_lkcSort"
+                           formControlName="lkcSort"/>
+                    <div *ngIf="editForm.get('lkcSort')!.invalid && (editForm.get('lkcSort')!.dirty || editForm.get('lkcSort')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lkcSort')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lkcSort')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.lookups.lkcEnabledInd" for="field_lkcEnabledInd">Lkc Enabled Ind</label>
+                    <input type="checkbox" class="form-control" name="lkcEnabledInd" id="field_lkcEnabledInd"
+                           formControlName="lkcEnabledInd"/>
+                    <div *ngIf="editForm.get('lkcEnabledInd')!.invalid && (editForm.get('lkcEnabledInd')!.dirty || editForm.get('lkcEnabledInd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lkcEnabledInd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.lookups.lkcDesc" for="field_lkcDesc">Lkc Desc</label>
+                    <input type="text" class="form-control" name="lkcDesc" id="field_lkcDesc"
+                           formControlName="lkcDesc"/>
+                    <div *ngIf="editForm.get('lkcDesc')!.invalid && (editForm.get('lkcDesc')!.dirty || editForm.get('lkcDesc')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('lkcDesc')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 80 }">
+                        This field cannot be longer than 80 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.lookups.lookUpType" for="field_lookUpType">Look Up Type</label>
+                    <select class="form-control" id="field_lookUpType" name="lookUpType" formControlName="lookUpType">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="lookupTypesOption.id === editForm.get('lookUpType')!.value?.id ? editForm.get('lookUpType')!.value : lookupTypesOption" *ngFor="let lookupTypesOption of lookuptypes; trackBy: trackById">{{ lookupTypesOption.id }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

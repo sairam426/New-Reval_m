@@ -1,0 +1,126 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-order-comments-heading" jhiTranslate="revalApp.orderComments.home.createOrEditLabel">Create or edit a Order Comments</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderComments.ocmCommentTypeCd" for="field_ocmCommentTypeCd">Ocm Comment Type Cd</label>
+                    <input type="text" class="form-control" name="ocmCommentTypeCd" id="field_ocmCommentTypeCd"
+                           formControlName="ocmCommentTypeCd"/>
+                    <div *ngIf="editForm.get('ocmCommentTypeCd')!.invalid && (editForm.get('ocmCommentTypeCd')!.dirty || editForm.get('ocmCommentTypeCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmCommentTypeCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmCommentTypeCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderComments.ocmCommentSubTypeCd" for="field_ocmCommentSubTypeCd">Ocm Comment Sub Type Cd</label>
+                    <input type="text" class="form-control" name="ocmCommentSubTypeCd" id="field_ocmCommentSubTypeCd"
+                           formControlName="ocmCommentSubTypeCd"/>
+                    <div *ngIf="editForm.get('ocmCommentSubTypeCd')!.invalid && (editForm.get('ocmCommentSubTypeCd')!.dirty || editForm.get('ocmCommentSubTypeCd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmCommentSubTypeCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmCommentSubTypeCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderComments.ocmCommentBy" for="field_ocmCommentBy">Ocm Comment By</label>
+                    <input type="text" class="form-control" name="ocmCommentBy" id="field_ocmCommentBy"
+                           formControlName="ocmCommentBy"/>
+                    <div *ngIf="editForm.get('ocmCommentBy')!.invalid && (editForm.get('ocmCommentBy')!.dirty || editForm.get('ocmCommentBy')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmCommentBy')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmCommentBy')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderComments.ocmCommentDate" for="field_ocmCommentDate">Ocm Comment Date</label>
+                    <div class="input-group">
+                        <input id="field_ocmCommentDate" type="text" class="form-control" name="ocmCommentDate" ngbDatepicker #ocmCommentDateDp="ngbDatepicker" formControlName="ocmCommentDate"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="ocmCommentDateDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                    <div *ngIf="editForm.get('ocmCommentDate')!.invalid && (editForm.get('ocmCommentDate')!.dirty || editForm.get('ocmCommentDate')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmCommentDate')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderComments.ocmCommentImpInd" for="field_ocmCommentImpInd">Ocm Comment Imp Ind</label>
+                    <input type="checkbox" class="form-control" name="ocmCommentImpInd" id="field_ocmCommentImpInd"
+                           formControlName="ocmCommentImpInd"/>
+                    <div *ngIf="editForm.get('ocmCommentImpInd')!.invalid && (editForm.get('ocmCommentImpInd')!.dirty || editForm.get('ocmCommentImpInd')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmCommentImpInd')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderComments.ocmComment" for="field_ocmComment">Ocm Comment</label>
+                    <input type="text" class="form-control" name="ocmComment" id="field_ocmComment"
+                           formControlName="ocmComment"/>
+                    <div *ngIf="editForm.get('ocmComment')!.invalid && (editForm.get('ocmComment')!.dirty || editForm.get('ocmComment')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmComment')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ocmComment')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 240 }">
+                        This field cannot be longer than 240 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.orderComments.order" for="field_order">Order</label>
+                    <select class="form-control" id="field_order" name="order" formControlName="order">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="ordersOption.id === editForm.get('order')!.value?.id ? editForm.get('order')!.value : ordersOption" *ngFor="let ordersOption of orders; trackBy: trackById">{{ ordersOption.id }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

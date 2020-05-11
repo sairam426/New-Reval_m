@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="lookupTypes">
+            <h2><span jhiTranslate="revalApp.lookupTypes.detail.title">Lookup Types</span> {{ lookupTypes.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.lookupTypes.lktType">Lkt Type</span></dt>
+                <dd>
+                    <span>{{ lookupTypes.lktType }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.lookupTypes.lktDesc">Lkt Desc</span></dt>
+                <dd>
+                    <span>{{ lookupTypes.lktDesc }}</span>
+                </dd>
+            </dl>
+
+            <!-- <jhi-lookups></jhi-lookups> -->
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/lookup-types', lookupTypes.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

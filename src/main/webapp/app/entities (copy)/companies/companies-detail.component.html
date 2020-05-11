@@ -1,0 +1,74 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="companies">
+            <h2><span jhiTranslate="revalApp.companies.detail.title">Companies</span> {{ companies.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.companies.cmpNbr">Cmp Nbr</span></dt>
+                <dd>
+                    <span>{{ companies.cmpNbr }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpName">Cmp Name</span></dt>
+                <dd>
+                    <span>{{ companies.cmpName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpServiceTypeCd">Cmp Service Type Cd</span></dt>
+                <dd>
+                    <span>{{ companies.cmpServiceTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpShortName">Cmp Short Name</span></dt>
+                <dd>
+                    <span>{{ companies.cmpShortName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpStatusCd">Cmp Status Cd</span></dt>
+                <dd>
+                    <span>{{ companies.cmpStatusCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpTypeCd">Cmp Type Cd</span></dt>
+                <dd>
+                    <span>{{ companies.cmpTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpAddress1">Cmp Address 1</span></dt>
+                <dd>
+                    <span>{{ companies.cmpAddress1 }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpAddress2">Cmp Address 2</span></dt>
+                <dd>
+                    <span>{{ companies.cmpAddress2 }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpCity">Cmp City</span></dt>
+                <dd>
+                    <span>{{ companies.cmpCity }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpStateCd">Cmp State Cd</span></dt>
+                <dd>
+                    <span>{{ companies.cmpStateCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpZip">Cmp Zip</span></dt>
+                <dd>
+                    <span>{{ companies.cmpZip }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.companies.cmpEnabledInd">Cmp Enabled Ind</span></dt>
+                <dd>
+                    <span>{{ companies.cmpEnabledInd }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/companies', companies.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

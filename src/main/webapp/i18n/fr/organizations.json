@@ -1,0 +1,29 @@
+{
+  "revalApp": {
+    "organizations": {
+      "home": {
+        "title": "Organizations",
+        "createLabel": "Créer un nouveau Organizations",
+        "createOrEditLabel": "Créer ou éditer un Organizations",
+        "notFound": "Aucun Organizations trouvé"
+      },
+      "created": "Un nouveau Organizations a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Organizations avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Organizations avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Organizations {{ id }} ?"
+      },
+      "detail": {
+        "title": "Organizations"
+      },
+      "orgNbr": "Org Nbr",
+      "orgName": "Org Name",
+      "orgShortName": "Org Short Name",
+      "orgAddress1": "Org Address 1",
+      "orgAddress2": "Org Address 2",
+      "orgCity": "Org City",
+      "orgStateCd": "Org State Cd",
+      "orgZip": "Org Zip"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "revalApp": {
+    "orderComments": {
+      "home": {
+        "title": "OrderComments",
+        "createLabel": "Créer un nouveau Order Comments",
+        "createOrEditLabel": "Créer ou éditer un Order Comments",
+        "notFound": "Aucun Order Comments trouvé"
+      },
+      "created": "Un nouveau Order Comments a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Order Comments avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Order Comments avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Order Comments {{ id }} ?"
+      },
+      "detail": {
+        "title": "Order Comments"
+      },
+      "ocmCommentTypeCd": "Ocm Comment Type Cd",
+      "ocmCommentSubTypeCd": "Ocm Comment Sub Type Cd",
+      "ocmCommentBy": "Ocm Comment By",
+      "ocmCommentDate": "Ocm Comment Date",
+      "ocmCommentImpInd": "Ocm Comment Imp Ind",
+      "ocmComment": "Ocm Comment",
+      "order": "Order"
+    }
+  }
+}

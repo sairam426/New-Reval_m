@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-transaction-codes-heading" jhiTranslate="revalApp.transactionCodes.home.createOrEditLabel">Create or edit a Transaction Codes</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodes.tcdCode" for="field_tcdCode">Tcd Code</label>
+                    <input type="text" class="form-control" name="tcdCode" id="field_tcdCode"
+                           formControlName="tcdCode"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodes.tcdEntityGroupCd" for="field_tcdEntityGroupCd">Tcd Entity Group Cd</label>
+                    <input type="text" class="form-control" name="tcdEntityGroupCd" id="field_tcdEntityGroupCd"
+                           formControlName="tcdEntityGroupCd"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodes.tcdDesc" for="field_tcdDesc">Tcd Desc</label>
+                    <input type="text" class="form-control" name="tcdDesc" id="field_tcdDesc"
+                           formControlName="tcdDesc"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.transactionCodes.tcdEnabledInd" for="field_tcdEnabledInd">Tcd Enabled Ind</label>
+                    <input type="checkbox" class="form-control" name="tcdEnabledInd" id="field_tcdEnabledInd"
+                           formControlName="tcdEnabledInd"/>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

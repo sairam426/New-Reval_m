@@ -1,0 +1,24 @@
+{
+  "revalApp": {
+    "transactionDetails": {
+      "home": {
+        "title": "TransactionDetails",
+        "createLabel": "Créer un nouveau Transaction Details",
+        "createOrEditLabel": "Créer ou éditer un Transaction Details",
+        "notFound": "Aucun Transaction Details trouvé"
+      },
+      "created": "Un nouveau Transaction Details a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Transaction Details avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Transaction Details avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Transaction Details {{ id }} ?"
+      },
+      "detail": {
+        "title": "Transaction Details"
+      },
+      "txdPrmCode": "Txd Prm Code",
+      "txdValue": "Txd Value",
+      "transaction": "Transaction"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="orderComments">
+            <h2><span jhiTranslate="revalApp.orderComments.detail.title">Order Comments</span> {{ orderComments.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.orderComments.ocmCommentTypeCd">Ocm Comment Type Cd</span></dt>
+                <dd>
+                    <span>{{ orderComments.ocmCommentTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderComments.ocmCommentSubTypeCd">Ocm Comment Sub Type Cd</span></dt>
+                <dd>
+                    <span>{{ orderComments.ocmCommentSubTypeCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderComments.ocmCommentBy">Ocm Comment By</span></dt>
+                <dd>
+                    <span>{{ orderComments.ocmCommentBy }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderComments.ocmCommentDate">Ocm Comment Date</span></dt>
+                <dd>
+                    <span>{{ orderComments.ocmCommentDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderComments.ocmCommentImpInd">Ocm Comment Imp Ind</span></dt>
+                <dd>
+                    <span>{{ orderComments.ocmCommentImpInd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderComments.ocmComment">Ocm Comment</span></dt>
+                <dd>
+                    <span>{{ orderComments.ocmComment }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.orderComments.order">Order</span></dt>
+                <dd>
+                    <div *ngIf="orderComments.order">
+                        <a [routerLink]="['/orders', orderComments.order?.id, 'view']">{{ orderComments.order?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/order-comments', orderComments.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

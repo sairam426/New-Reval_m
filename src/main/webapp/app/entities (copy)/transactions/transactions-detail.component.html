@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="transactions">
+            <h2><span jhiTranslate="revalApp.transactions.detail.title">Transactions</span> {{ transactions.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.transactions.txnEntityId">Txn Entity Id</span></dt>
+                <dd>
+                    <span>{{ transactions.txnEntityId }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactions.txnEntityNbr">Txn Entity Nbr</span></dt>
+                <dd>
+                    <span>{{ transactions.txnEntityNbr }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactions.txnTcdCode">Txn Tcd Code</span></dt>
+                <dd>
+                    <span>{{ transactions.txnTcdCode }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactions.txnPostDt">Txn Post Dt</span></dt>
+                <dd>
+                    <span>{{ transactions.txnPostDt }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.transactions.txnStatusCd">Txn Status Cd</span></dt>
+                <dd>
+                    <span>{{ transactions.txnStatusCd }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/transactions', transactions.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

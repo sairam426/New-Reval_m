@@ -1,0 +1,75 @@
+<app-header [navbarBrandRouterLink]="['/dashboard']" [fixed]="true"
+  [navbarBrandFull]="{src: '../../../../content/images/brand/logo.svg', width: 89, height: 25, alt: 'CoreUI Logo'}"
+  [navbarBrandMinimized]="{src: '../../../../content/images/brand/sygnet.svg', width: 30, height: 30, alt: 'CoreUI Logo'}"
+  [sidebarToggler]="'lg'" [asideMenuToggler]="'lg'">
+  <ul class="nav navbar-nav d-md-down-none">
+    <li class="nav-item px-3">
+      <a class="nav-link" href="#">Dashboard</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" href="#">Users</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" href="#">Settings</a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item d-md-down-none">
+      <a class="nav-link" href="#">
+        <fa-icon icon="bell"></fa-icon>
+        <span class="badge badge-pill badge-danger">5</span>
+      </a>
+    </li>
+    <li class="nav-item d-md-down-none">
+      <a class="nav-link" href="#">
+        <fa-icon icon="list"></fa-icon>
+      </a>
+    </li>
+    <li class="nav-item d-md-down-none">
+      <a class="nav-link" href="#">
+        <fa-icon icon="map-marker-alt"></fa-icon>
+      </a>
+    </li>
+    <li class="nav-item dropdown pointer" ngbDropdown display="dynamic" placement="bottom-right">
+      <a class="nav-link" style="cursor: pointer" ngbDropdownToggle id="navbarDropdown3" role="button">
+        <img src="../../../../content/images/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" />
+      </a>
+      <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+        <div class="dropdown-header text-center"><strong>Account</strong></div>
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">
+          <fa-icon icon="bell"></fa-icon>
+           <span class="icon-text">Updates</span>
+           <span class="badge badge-info">12</span>
+        </a>
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">
+          <fa-icon icon="envelope"></fa-icon>
+           <span class="icon-text">Messages</span>
+           <span class="badge badge-info">12</span>
+        </a>
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">
+          <fa-icon icon="tasks"></fa-icon>
+           <span class="icon-text">Tasks</span>
+           <span class="badge badge-info">04</span>
+        </a>
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">
+          <fa-icon icon="comments"></fa-icon>
+           <span class="icon-text">Comments</span>
+           <span class="badge badge-info">14</span>
+        </a>
+        <div class="dropdown-header text-center"><strong>Settings</strong></div>
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">
+          <fa-icon icon="user-alt"></fa-icon>
+           <span class="icon-text">Profile</span>
+        </a>
+        <a class="dropdown-item" href="#" (click)="$event.preventDefault()">
+          <fa-icon icon="wrench"></fa-icon>
+           <span class="icon-text">Settings</span>
+        </a>
+        <a class="dropdown-item" (click)="logout()" id="logout">
+          <fa-icon icon="lock"></fa-icon>
+           <span class="icon-text">Logout</span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</app-header>

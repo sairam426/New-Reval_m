@@ -1,0 +1,104 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-organizations-heading" jhiTranslate="revalApp.organizations.home.createOrEditLabel">Create or edit a Organizations</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.organizations.orgNbr" for="field_orgNbr">Org Nbr</label>
+                    <input type="text" class="form-control" name="orgNbr" id="field_orgNbr"
+                           formControlName="orgNbr"/>
+                    <div *ngIf="editForm.get('orgNbr')!.invalid && (editForm.get('orgNbr')!.dirty || editForm.get('orgNbr')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('orgNbr')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('orgNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.organizations.orgName" for="field_orgName">Org Name</label>
+                    <input type="text" class="form-control" name="orgName" id="field_orgName"
+                           formControlName="orgName"/>
+                    <div *ngIf="editForm.get('orgName')!.invalid && (editForm.get('orgName')!.dirty || editForm.get('orgName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('orgName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('orgName')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.organizations.orgShortName" for="field_orgShortName">Org Short Name</label>
+                    <input type="text" class="form-control" name="orgShortName" id="field_orgShortName"
+                           formControlName="orgShortName"/>
+                    <div *ngIf="editForm.get('orgShortName')!.invalid && (editForm.get('orgShortName')!.dirty || editForm.get('orgShortName')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('orgShortName')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('orgShortName')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                        This field cannot be longer than 30 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.organizations.orgAddress1" for="field_orgAddress1">Org Address 1</label>
+                    <input type="text" class="form-control" name="orgAddress1" id="field_orgAddress1"
+                           formControlName="orgAddress1"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.organizations.orgAddress2" for="field_orgAddress2">Org Address 2</label>
+                    <input type="text" class="form-control" name="orgAddress2" id="field_orgAddress2"
+                           formControlName="orgAddress2"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.organizations.orgCity" for="field_orgCity">Org City</label>
+                    <input type="text" class="form-control" name="orgCity" id="field_orgCity"
+                           formControlName="orgCity"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.organizations.orgStateCd" for="field_orgStateCd">Org State Cd</label>
+                    <input type="text" class="form-control" name="orgStateCd" id="field_orgStateCd"
+                           formControlName="orgStateCd"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="revalApp.organizations.orgZip" for="field_orgZip">Org Zip</label>
+                    <input type="text" class="form-control" name="orgZip" id="field_orgZip"
+                           formControlName="orgZip"/>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

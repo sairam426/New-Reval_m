@@ -1,0 +1,83 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="revalApp.transactionCodeParams.home.title">Transaction Code Params</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-transaction-code-params" [routerLink]="['/transaction-code-params/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="revalApp.transactionCodeParams.home.createLabel">
+            Create a new Transaction Code Params
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="transactionCodeParams?.length === 0">
+        <span jhiTranslate="revalApp.transactionCodeParams.home.notFound">No transactionCodeParams found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="transactionCodeParams?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.tcpTcdCode">Tcp Tcd Code</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.tcpParamName">Tcp Param Name</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.tcpParamDesc">Tcp Param Desc</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.tcpEnabledInd">Tcp Enabled Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.tcpParamDataTypeCd">Tcp Param Data Type Cd</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.tcpParamLength">Tcp Param Length</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.tcpDefaultValue">Tcp Default Value</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.tcpParamLovValidationInd">Tcp Param Lov Validation Ind</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.tcpParamLktType">Tcp Param Lkt Type</span></th>
+                    <th scope="col" ><span jhiTranslate="revalApp.transactionCodeParams.transactionCode">Transaction Code</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let transactionCodeParams of transactionCodeParams ;trackBy: trackId">
+                    <td><a [routerLink]="['/transaction-code-params', transactionCodeParams.id, 'view']">{{ transactionCodeParams.id }}</a></td>
+                    <td>{{ transactionCodeParams.tcpTcdCode }}</td>
+                    <td>{{ transactionCodeParams.tcpParamName }}</td>
+                    <td>{{ transactionCodeParams.tcpParamDesc }}</td>
+                    <td>{{ transactionCodeParams.tcpEnabledInd }}</td>
+                    <td>{{ transactionCodeParams.tcpParamDataTypeCd }}</td>
+                    <td>{{ transactionCodeParams.tcpParamLength }}</td>
+                    <td>{{ transactionCodeParams.tcpDefaultValue }}</td>
+                    <td>{{ transactionCodeParams.tcpParamLovValidationInd }}</td>
+                    <td>{{ transactionCodeParams.tcpParamLktType }}</td>
+                    <td>
+                        <div *ngIf="transactionCodeParams.transactionCode">
+                            <a [routerLink]="['/transaction-codes', transactionCodeParams.transactionCode?.id, 'view']" >{{ transactionCodeParams.transactionCode?.id }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/transaction-code-params', transactionCodeParams.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/transaction-code-params', transactionCodeParams.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(transactionCodeParams)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

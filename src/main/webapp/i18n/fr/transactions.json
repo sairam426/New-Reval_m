@@ -1,0 +1,27 @@
+{
+  "revalApp": {
+    "transactions": {
+      "home": {
+        "title": "Transactions",
+        "createLabel": "Créer un nouveau Transactions",
+        "createOrEditLabel": "Créer ou éditer un Transactions",
+        "notFound": "Aucun Transactions trouvé"
+      },
+      "created": "Un nouveau Transactions a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Transactions avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Transactions avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Transactions {{ id }} ?"
+      },
+      "detail": {
+        "title": "Transactions"
+      },
+      "txnEntityId": "Txn Entity Id",
+      "txnEntityNbr": "Txn Entity Nbr",
+      "txnTcdCode": "Txn Tcd Code",
+      "txnPostDt": "Txn Post Dt",
+      "txnStatusCd": "Txn Status Cd",
+      "txnDetails": "Txn Details"
+    }
+  }
+}

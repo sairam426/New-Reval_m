@@ -1,0 +1,58 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="organizations">
+            <h2><span jhiTranslate="revalApp.organizations.detail.title">Organizations</span> {{ organizations.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="revalApp.organizations.orgNbr">Org Nbr</span></dt>
+                <dd>
+                    <span>{{ organizations.orgNbr }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.organizations.orgName">Org Name</span></dt>
+                <dd>
+                    <span>{{ organizations.orgName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.organizations.orgShortName">Org Short Name</span></dt>
+                <dd>
+                    <span>{{ organizations.orgShortName }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.organizations.orgAddress1">Org Address 1</span></dt>
+                <dd>
+                    <span>{{ organizations.orgAddress1 }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.organizations.orgAddress2">Org Address 2</span></dt>
+                <dd>
+                    <span>{{ organizations.orgAddress2 }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.organizations.orgCity">Org City</span></dt>
+                <dd>
+                    <span>{{ organizations.orgCity }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.organizations.orgStateCd">Org State Cd</span></dt>
+                <dd>
+                    <span>{{ organizations.orgStateCd }}</span>
+                </dd>
+                <dt><span jhiTranslate="revalApp.organizations.orgZip">Org Zip</span></dt>
+                <dd>
+                    <span>{{ organizations.orgZip }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/organizations', organizations.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
