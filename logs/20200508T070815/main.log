@@ -1,6 +1,0 @@
-[2020-05-08 07:08:19.357] [main] [info] update#setState idle
-[2020-05-08 07:08:33.068] [main] [info] update#setState checking for updates
-[2020-05-08 07:08:33.117] [main] [error] Error: ENOENT: no such file or directory, lstat '/snap/code/current'
-[2020-05-08 07:08:33.117] [main] [info] update#setState idle
-[2020-05-08 07:08:35.783] [main] [info] update#setState checking for updates
-[2020-05-08 07:08:35.799] [main] [info] update#setState ready

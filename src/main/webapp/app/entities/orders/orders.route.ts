@@ -11,6 +11,7 @@ import { OrdersService } from './orders.service';
 import { OrdersComponent } from './orders.component';
 import { OrdersDetailComponent } from './orders-detail.component';
 import { OrdersUpdateComponent } from './orders-update.component';
+import { OrderSearchComponent } from './order-search.component';
 
 @Injectable({ providedIn: 'root' })
 export class OrdersResolve implements Resolve<IOrders> {
@@ -79,5 +80,9 @@ export const ordersRoute: Routes = [
       pageTitle: 'revalApp.orders.home.title'
     },
     canActivate: [UserRouteAccessService]
+  },
+  {
+    path: ':search',
+    component: OrderSearchComponent,
   }
 ];

@@ -1,8 +1,0 @@
-[2020-05-06 18:30:09.031] [main] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/mahi/Desktop/REVAL_M/User'
-[2020-05-06 18:30:09.039] [main] [info] update#setState idle
-[2020-05-06 18:30:39.051] [main] [info] update#setState checking for updates
-[2020-05-06 18:30:39.052] [main] [info] update#setState idle
-[2020-05-06 19:30:40.785] [main] [info] update#setState checking for updates
-[2020-05-06 19:30:40.789] [main] [info] update#setState idle
-[2020-05-06 20:30:40.811] [main] [info] update#setState checking for updates
-[2020-05-06 20:30:40.813] [main] [info] update#setState idle

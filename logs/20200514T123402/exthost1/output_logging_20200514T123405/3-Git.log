@@ -1,0 +1,931 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /home/mahi/Desktop/New-Reval_m
+> git fetch
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/entity.module.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/entity.module.ts
+> git cat-file -s 26cc1cef15df62ecff84095bb398bb7a13e9523a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/entity.module.ts
+> git cat-file -s 26cc1cef15df62ecff84095bb398bb7a13e9523a
+> git show :src/main/webapp/app/entities/entity.module.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/entity.module.ts
+> git cat-file -s 26cc1cef15df62ecff84095bb398bb7a13e9523a
+> git show :src/main/webapp/app/entities/entity.module.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git check-ignore -v -z --stdin
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/entity.module.ts
+> git cat-file -s 26cc1cef15df62ecff84095bb398bb7a13e9523a
+> git show :src/main/webapp/app/entities/entity.module.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/entity.module.ts
+> git cat-file -s 26cc1cef15df62ecff84095bb398bb7a13e9523a
+> git show :src/main/webapp/app/entities/entity.module.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git cat-file -s 98a84eca82285ee9535794dca03cda7ec1ed6ab1
+> git show :src/main/webapp/app/layouts/coreui/sidebar/sidebar.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookups/lookups-update.component.html
+> git cat-file -s ac89ccff66ee2c6cdfa3dfd947239f77251c86b5
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git cat-file -s f31229c24d3dd308b3326d836e2fa4fb0b2b40c4
+> git show :src/main/webapp/app/entities/lookups/lookups-update.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types-detail.component.ts
+> git cat-file -s c9117844f0e0cc2fd3f5ab8d0a14fca46a86f566
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types-update.component.ts
+> git cat-file -s 4b6872afb0d44c3f37553fab00106f1774f2c544
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types-update.component.html
+> git cat-file -s 8e303dac1aa3f46fa5ff7b05594e7b67ec82057b
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git cat-file -s 135534bf1f461ef9938c5a4a7bba1a946dfa69b5
+> git show :src/main/webapp/app/entities/lookup-types/lookup-types.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/orders-delete-dialog.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-delete-dialog.component.html
+> git cat-file -s 3f41acd34a4add090b1cae9dfb12d3a4512fc862
+> git show :src/main/webapp/app/entities/orders/orders-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-detail.component.html
+> git cat-file -s 5af45407361975944628bc1167bf08aa32bff434
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+fatal: unable to access 'https://github.com/sairam426/New-Reval_m.git/': Could not resolve host: github.com
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git fetch
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/orders.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders.component.html
+> git cat-file -s 43321255f7370447ca279d17d56b3f210b1cbbcf
+> git show :src/main/webapp/app/entities/orders/orders-detail.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-detail.component.ts
+> git cat-file -s 2019c1bb5c0b91fab4f038bdeea512857cf7146e
+> git show :src/main/webapp/app/entities/orders/orders-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-detail.component.html
+> git cat-file -s 5af45407361975944628bc1167bf08aa32bff434
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/orders-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-detail.component.html
+> git cat-file -s 5af45407361975944628bc1167bf08aa32bff434
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git fetch
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/orders-detail.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-detail.component.html
+> git cat-file -s 5af45407361975944628bc1167bf08aa32bff434
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git fetch
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git fetch
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git fetch
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git fetch
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/orders-update.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.ts
+> git cat-file -s 4218d0ab569dfb11f9de0b5c05f625b6b205f128
+> git show :src/main/webapp/app/entities/orders/orders-update.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/orders-update.component.html
+> git cat-file -s 8cd7d2f2457e80a680d2e18eee01dad1ce718bd3
+> git show :src/main/webapp/app/entities/orders/order-search.component.ts
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.ts
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git fetch
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/mahi/Desktop/New-Reval_m/src/main/webapp/app/entities/orders/order-search.component.html
+> git show :src/main/webapp/app/entities/orders/order-search.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template

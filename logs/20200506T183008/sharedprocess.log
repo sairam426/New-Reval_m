@@ -1,3 +1,0 @@
-[2020-05-06 18:30:13.078] [sharedprocess] [info] main {"machineId":"c7d4fa86258e1eaae7d6c5045b9beb486f5caed83ee318fed70a43b60f53af99","windowId":2}
-[2020-05-06 18:30:13.193] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/mahi/Desktop/REVAL_M/User/snippets'
-[2020-05-06 18:30:53.130] [sharedprocess] [info] Starting to clean up unused language packs.

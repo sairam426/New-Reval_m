@@ -1,0 +1,7 @@
+[2020-05-15 07:26:35.104] [main] [info] update#setState idle
+[2020-05-15 07:26:41.044] [main] [info] update#setState checking for updates
+[2020-05-15 07:26:41.048] [main] [error] Error: ENOENT: no such file or directory, lstat '/snap/code/current'
+[2020-05-15 07:26:41.048] [main] [info] update#setState idle
+[2020-05-15 07:26:47.153] [main] [error] update#checkForSnapUpdate(): Could not get realpath of application.
+[2020-05-15 07:26:50.571] [main] [info] update#setState checking for updates
+[2020-05-15 07:26:50.573] [main] [info] update#setState ready

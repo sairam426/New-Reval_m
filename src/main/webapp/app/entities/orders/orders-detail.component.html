@@ -1,478 +1,1258 @@
 <div class="row justify-content-center">
-    <div class="col-8">
+    <div class="col-12">
         <div *ngIf="orders">
             <h2><span jhiTranslate="revalApp.orders.detail.title">Orders</span> {{ orders.id }}</h2>
 
             <hr>
 
             <jhi-alert-error></jhi-alert-error>
-
-            <dl class="row-md jh-entity-details">
-                <dt><span jhiTranslate="revalApp.orders.ordNumber">Ord Number</span></dt>
-                <dd>
-                    <span>{{ orders.ordNumber }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordStageCd">Ord Stage Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordStageCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordOrgOrderStatusCd">Ord Org Order Status Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordOrgOrderStatusCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordCmpOrderStatusCd">Ord Cmp Order Status Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordCmpOrderStatusCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordProOrderStatusCd">Ord Pro Order Status Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordProOrderStatusCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordCmpNbr">Ord Cmp Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordCmpNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordBrnNbr">Ord Brn Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordBrnNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordProNbr">Ord Pro Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordProNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordProductCode">Ord Product Code</span></dt>
-                <dd>
-                    <span>{{ orders.ordProductCode }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordOriginalValueAmt">Ord Original Value Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordOriginalValueAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordParentTrackingNbr">Ord Parent Tracking Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordParentTrackingNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUserNbr">Ord User Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordUserNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordOrderDt">Ord Order Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordOrderDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRushRequestDueDt">Ord Rush Request Due Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordRushRequestDueDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordOrgInstructions">Ord Org Instructions</span></dt>
-                <dd>
-                    <span>{{ orders.ordOrgInstructions }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordOrgOtherInstructions">Ord Org Other Instructions</span></dt>
-                <dd>
-                    <span>{{ orders.ordOrgOtherInstructions }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordMultiOrderInd">Ord Multi Order Ind</span></dt>
-                <dd>
-                    <span>{{ orders.ordMultiOrderInd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordOrgDuedate">Ord Org Duedate</span></dt>
-                <dd>
-                    <span>{{ orders.ordOrgDuedate }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordProDuedate">Ord Pro Duedate</span></dt>
-                <dd>
-                    <span>{{ orders.ordProDuedate }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpDataFnmaSubmitToUcdpInd">Ord Ucdp Data Fnma Submit To Ucdp Ind</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpDataFnmaSubmitToUcdpInd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpDataFnmaServicerNbr">Ord Ucdp Data Fnma Servicer Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpDataFnmaServicerNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpDataFhlmcSubmitToUcdpInd">Ord Ucdp Data Fhlmc Submit To Ucdp Ind</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpDataFhlmcSubmitToUcdpInd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpDataFhlmcIdentificationNbr">Ord Ucdp Data Fhlmc Identification Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpDataFhlmcIdentificationNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpDataUcdpBussinessUnitNbr">Ord Ucdp Data Ucdp Bussiness Unit Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpDataUcdpBussinessUnitNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpSdFnamaDocumentId">Ord Ucdp Sd Fnama Document Id</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpSdFnamaDocumentId }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpSdFnmaSubmissionStatusId">Ord Ucdp Sd Fnma Submission Status Id</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpSdFnmaSubmissionStatusId }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpSdFhlmcDocumentFileCd">Ord Ucdp Sd Fhlmc Document File Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpSdFhlmcDocumentFileCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpSdEadSubmissionStatusCd">Ord Ucdp Sd Ead Submission Status Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpSdEadSubmissionStatusCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordUcdpFinalSubmissionDt">Ord Ucdp Final Submission Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordUcdpFinalSubmissionDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanNbr">Ord Loan Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordloanOldLoanNbr">Ordloan Old Loan Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordloanOldLoanNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanProgram">Ord Loan Program</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanProgram }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanPurpose">Ord Loan Purpose</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanPurpose }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanType">Ord Loan Type</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanType }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanAmt">Ord Loan Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanQualifyingValueAmt">Ord Loan Qualifying Value Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanQualifyingValueAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanSalesPriceAmt">Ord Loan Sales Price Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanSalesPriceAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerLastName">Ord Loan Borrower Last Name</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanBorrowerLastName }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerFirstName">Ord Loan Borrower First Name</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanBorrowerFirstName }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerMiddleName">Ord Loan Borrower Middle Name</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanBorrowerMiddleName }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerIsCoBorrowerInd">Ord Loan Borrower Is Co Borrower Ind</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanBorrowerIsCoBorrowerInd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanFhaCaseNbr">Ord Loan Fha Case Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanFhaCaseNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanDeedRestrictionInd">Ord Loan Deed Restriction Ind</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanDeedRestrictionInd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanEstimatedCloseDt">Ord Loan Estimated Close Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanEstimatedCloseDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanHpmlInd">Ord Loan Hpml Ind</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanHpmlInd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanIsNewConstructionInd">Ord Loan Is New Construction Ind</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanIsNewConstructionInd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanCustomerSegmentCode">Ord Loan Customer Segment Code</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanCustomerSegmentCode }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanNonSubjectPropertyInd">Ord Loan Non Subject Property Ind</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanNonSubjectPropertyInd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerRequestedCloseDt">Ord Loan Borrower Requested Close Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordLoanBorrowerRequestedCloseDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyTypeCd">Ord Property Type Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyTypeCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyAddress1">Ord Property Address 1</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyAddress1 }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyAddress2">Ord Property Address 2</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyAddress2 }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyCity">Ord Property City</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyCity }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyStateCd">Ord Property State Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyStateCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyZip">Ord Property Zip</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyZip }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyCounty">Ord Property County</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyCounty }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyLatitue">Ord Property Latitue</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyLatitue }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyLongitude">Ord Property Longitude</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyLongitude }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordPropertyProjectName">Ord Property Project Name</span></dt>
-                <dd>
-                    <span>{{ orders.ordPropertyProjectName }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact1TypeCd">Ord Contact 1 Type Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact1TypeCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact1Name">Ord Contact 1 Name</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact1Name }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact1WorkPhone">Ord Contact 1 Work Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact1WorkPhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact1HomePhone">Ord Contact 1 Home Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact1HomePhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact1CellPhone">Ord Contact 1 Cell Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact1CellPhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact1OtherCellPhone">Ord Contact 1 Other Cell Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact1OtherCellPhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact1Email">Ord Contact 1 Email</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact1Email }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact1OtherEmail">Ord Contact 1 Other Email</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact1OtherEmail }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact2TypeCd">Ord Contact 2 Type Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact2TypeCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact2Name">Ord Contact 2 Name</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact2Name }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact2WorkPhone">Ord Contact 2 Work Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact2WorkPhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact2HomePhone">Ord Contact 2 Home Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact2HomePhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact2CellPhone">Ord Contact 2 Cell Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact2CellPhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact2OtherCellPhone">Ord Contact 2 Other Cell Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact2OtherCellPhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact2Email">Ord Contact 2 Email</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact2Email }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact2OtherEmail">Ord Contact 2 Other Email</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact2OtherEmail }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact3TypeCd">Ord Contact 3 Type Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact3TypeCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact3Name">Ord Contact 3 Name</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact3Name }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact3WorkPhone">Ord Contact 3 Work Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact3WorkPhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact3HomePhone">Ord Contact 3 Home Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact3HomePhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact3CellPhone">Ord Contact 3 Cell Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact3CellPhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact3OtherCellPhone">Ord Contact 3 Other Cell Phone</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact3OtherCellPhone }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact3Email">Ord Contact 3 Email</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact3Email }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordContact3OtherEmail">Ord Contact 3 Other Email</span></dt>
-                <dd>
-                    <span>{{ orders.ordContact3OtherEmail }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrStatusCd">Ord Request Rr Status Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrStatusCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrVendorAppraisalId">Ord Request Rr Vendor Appraisal Id</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrVendorAppraisalId }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrvendorAppraisalDraftRcvdDt">Ord Request Rrvendor Appraisal Draft Rcvd Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrvendorAppraisalDraftRcvdDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrXmlFormId">Ord Request Rr Xml Form Id</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrXmlFormId }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrPdfFormId">Ord Request Rr Pdf Form Id</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrPdfFormId }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrApprFileDataSourcCd">Ord Request Rr Appr File Data Sourc Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrApprFileDataSourcCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrReportValueAmt">Ord Request Rr Report Value Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrReportValueAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrAppraisalCompanyName">Ord Request Rr Appraisal Company Name</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrAppraisalCompanyName }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrvendorName">Ord Request Rrvendor Name</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrvendorName }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrvendorLicenseNbr">Ord Request Rrvendor License Nbr</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrvendorLicenseNbr }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordRequestRrvendorLicenseStateCd">Ord Request Rrvendor License State Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordRequestRrvendorLicenseStateCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationCompletedProduct">Ord Valuation Completed Product</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationCompletedProduct }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationDueToClientDt">Ord Valuation Due To Client Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationDueToClientDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationReportRecivedDt">Ord Valuation Report Recived Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationReportRecivedDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationCompletionDt">Ord Valuation Completion Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationCompletionDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationReportStatusCd">Ord Valuation Report Status Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationReportStatusCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationAppraisedValueAmt">Ord Valuation Appraised Value Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationAppraisedValueAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationBpoMarketValueAmt">Ord Valuation Bpo Market Value Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationBpoMarketValueAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationBpoAsIsAmt">Ord Valuation Bpo As Is Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationBpoAsIsAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationBpoAsRepairedValueAmt">Ord Valuation Bpo As Repaired Value Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationBpoAsRepairedValueAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationRedFlagCode">Ord Valuation Red Flag Code</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationRedFlagCode }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationRedFlagDesc">Ord Valuation Red Flag Desc</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationRedFlagDesc }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationAmcAppraisalId">Ord Valuation Amc Appraisal Id</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationAmcAppraisalId }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordValuationFinalReviewId">Ord Valuation Final Review Id</span></dt>
-                <dd>
-                    <span>{{ orders.ordValuationFinalReviewId }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordReviewRecommendedValueAmt">Ord Review Recommended Value Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordReviewRecommendedValueAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordReviewDt">Ord Review Dt</span></dt>
-                <dd>
-                    <span>{{ orders.ordReviewDt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordReviewRecommendedActionCd">Ord Review Recommended Action Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordReviewRecommendedActionCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordReviewReviewerDecisionCd">Ord Review Reviewer Decision Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordReviewReviewerDecisionCd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordReviewReviewScore">Ord Review Review Score</span></dt>
-                <dd>
-                    <span>{{ orders.ordReviewReviewScore }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordReviewFormUsed">Ord Review Form Used</span></dt>
-                <dd>
-                    <span>{{ orders.ordReviewFormUsed }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordReviewProviderOnWatchListInd">Ord Review Provider On Watch List Ind</span></dt>
-                <dd>
-                    <span>{{ orders.ordReviewProviderOnWatchListInd }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordReviewCuredValueAmt">Ord Review Cured Value Amt</span></dt>
-                <dd>
-                    <span>{{ orders.ordReviewCuredValueAmt }}</span>
-                </dd>
-                <dt><span jhiTranslate="revalApp.orders.ordReviewFinalRecommendedActionCd">Ord Review Final Recommended Action Cd</span></dt>
-                <dd>
-                    <span>{{ orders.ordReviewFinalRecommendedActionCd }}</span>
-                </dd>
-            </dl>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card order-card">
+                        <div class="card-header">
+                            <span>Order Details</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordNumber">Ord Number</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordNumber }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordStageCd">Ord Stage Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordStageCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordOrgOrderStatusCd">Ord Org Order Status Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordOrgOrderStatusCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordCmpOrderStatusCd">Ord Cmp Order Status Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordCmpOrderStatusCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordProOrderStatusCd">Ord Pro Order Status Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordProOrderStatusCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordCmpNbr">Ord Cmp Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordCmpNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordBrnNbr">Ord Brn Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordBrnNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordProNbr">Ord Pro Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordProNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordProductCode">Ord Product Code</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordProductCode }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordOriginalValueAmt">Ord Original Value Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordOriginalValueAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordParentTrackingNbr">Ord Parent Tracking Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordParentTrackingNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUserNbr">Ord User Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUserNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordOrderDt">Ord Order Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordOrderDt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRushRequestDueDt">Ord Rush Request Due Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRushRequestDueDt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordOrgInstructions">Ord Org Instructions</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordOrgInstructions }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordOrgOtherInstructions">Ord Org Other Instructions</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordOrgOtherInstructions }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordMultiOrderInd">Ord Multi Order Ind</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordMultiOrderInd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordOrgDuedate">Ord Org Duedate</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordOrgDuedate }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordProDuedate">Ord Pro Duedate</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordProDuedate }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card order-card">
+                        <div class="card-header">
+                            <span>Customer Details</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerLastName">Ord Loan Borrower Last Name</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanBorrowerLastName }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerFirstName">Ord Loan Borrower First Name</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanBorrowerFirstName }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerMiddleName">Ord Loan Borrower Middle Name</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanBorrowerMiddleName }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerIsCoBorrowerInd">Ord Loan Borrower Is Co Borrower Ind</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanBorrowerIsCoBorrowerInd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanBorrowerRequestedCloseDt">Ord Loan Borrower Requested Close Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanBorrowerRequestedCloseDt }}</span>
+                                    </dd>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4">
+                    <div class="card order-card">
+                        <div class="card-header">
+                            <span>Loan Details</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanNbr">Ord Loan Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordloanOldLoanNbr">Ordloan Old Loan Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordloanOldLoanNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanProgram">Ord Loan Program</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanProgram }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanPurpose">Ord Loan Purpose</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanPurpose }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanType">Ord Loan Type</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanType }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanAmt">Ord Loan Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanQualifyingValueAmt">Ord Loan Qualifying Value Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanQualifyingValueAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanSalesPriceAmt">Ord Loan Sales Price Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanSalesPriceAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanFhaCaseNbr">Ord Loan Fha Case Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanFhaCaseNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanDeedRestrictionInd">Ord Loan Deed Restriction Ind</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanDeedRestrictionInd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanEstimatedCloseDt">Ord Loan Estimated Close Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanEstimatedCloseDt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanHpmlInd">Ord Loan Hpml Ind</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanHpmlInd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanIsNewConstructionInd">Ord Loan Is New Construction Ind</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanIsNewConstructionInd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanCustomerSegmentCode">Ord Loan Customer Segment Code</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanCustomerSegmentCode }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordLoanNonSubjectPropertyInd">Ord Loan Non Subject Property Ind</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordLoanNonSubjectPropertyInd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4">
+                    <div class="card order-card">
+                        <div class="card-header">
+                            <span>Property Details</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyTypeCd">Ord Property Type Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyTypeCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyAddress1">Ord Property Address 1</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyAddress1 }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyAddress2">Ord Property Address 2</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyAddress2 }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyCity">Ord Property City</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyCity }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyStateCd">Ord Property State Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyStateCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyZip">Ord Property Zip</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyZip }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyCounty">Ord Property County</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyCounty }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyLatitue">Ord Property Latitue</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyLatitue }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyLongitude">Ord Property Longitude</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyLongitude }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordPropertyProjectName">Ord Property Project Name</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordPropertyProjectName }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4">
+                    <div class="card order-card">
+                        <div class="card-header">
+                            <span>Contact Deatils</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact1TypeCd">Ord Contact 1 Type Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact1TypeCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact1Name">Ord Contact 1 Name</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact1Name }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact1WorkPhone">Ord Contact 1 Work Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact1WorkPhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact1HomePhone">Ord Contact 1 Home Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact1HomePhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact1CellPhone">Ord Contact 1 Cell Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact1CellPhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact1OtherCellPhone">Ord Contact 1 Other Cell Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact1OtherCellPhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact1Email">Ord Contact 1 Email</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact1Email }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact1OtherEmail">Ord Contact 1 Other Email</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact1OtherEmail }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact2TypeCd">Ord Contact 2 Type Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact2TypeCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact2Name">Ord Contact 2 Name</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact2Name }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact2WorkPhone">Ord Contact 2 Work Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact2WorkPhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact2HomePhone">Ord Contact 2 Home Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact2HomePhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact2CellPhone">Ord Contact 2 Cell Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact2CellPhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact2OtherCellPhone">Ord Contact 2 Other Cell Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact2OtherCellPhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact2Email">Ord Contact 2 Email</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact2Email }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact2OtherEmail">Ord Contact 2 Other Email</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact2OtherEmail }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact3TypeCd">Ord Contact 3 Type Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact3TypeCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact3Name">Ord Contact 3 Name</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact3Name }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact3WorkPhone">Ord Contact 3 Work Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact3WorkPhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact3HomePhone">Ord Contact 3 Home Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact3HomePhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact3CellPhone">Ord Contact 3 Cell Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact3CellPhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact3OtherCellPhone">Ord Contact 3 Other Cell Phone</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact3OtherCellPhone }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact3Email">Ord Contact 3 Email</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact3Email }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordContact3OtherEmail">Ord Contact 3 Other Email</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordContact3OtherEmail }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card order-card">
+                        <div class="card-header">
+                            <span>Report Review Deatils</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationFinalReviewId">Ord Valuation Final Review Id</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationFinalReviewId }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordReviewRecommendedValueAmt">Ord Review Recommended Value Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordReviewRecommendedValueAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordReviewDt">Ord Review Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordReviewDt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordReviewRecommendedActionCd">Ord Review Recommended Action Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordReviewRecommendedActionCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordReviewReviewerDecisionCd">Ord Review Reviewer Decision Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordReviewReviewerDecisionCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordReviewReviewScore">Ord Review Review Score</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordReviewReviewScore }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordReviewFormUsed">Ord Review Form Used</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordReviewFormUsed }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordReviewProviderOnWatchListInd">Ord Review Provider On Watch List Ind</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordReviewProviderOnWatchListInd }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordReviewCuredValueAmt">Ord Review Cured Value Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordReviewCuredValueAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordReviewFinalRecommendedActionCd">Ord Review Final Recommended Action Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordReviewFinalRecommendedActionCd }}</span>
+                                    </dd> 
+                                </div>
+                            </div>  
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4">
+                    <div class="card order-card">
+                        <div class="card-header">
+                            <span>Valuation Deatils</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationCompletedProduct">Ord Valuation Completed Product</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationCompletedProduct }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationDueToClientDt">Ord Valuation Due To Client Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationDueToClientDt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationReportRecivedDt">Ord Valuation Report Recived Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationReportRecivedDt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationCompletionDt">Ord Valuation Completion Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationCompletionDt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationReportStatusCd">Ord Valuation Report Status Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationReportStatusCd }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationAppraisedValueAmt">Ord Valuation Appraised Value Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationAppraisedValueAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationBpoMarketValueAmt">Ord Valuation Bpo Market Value Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationBpoMarketValueAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationBpoAsIsAmt">Ord Valuation Bpo As Is Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationBpoAsIsAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationBpoAsRepairedValueAmt">Ord Valuation Bpo As Repaired Value Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationBpoAsRepairedValueAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationRedFlagCode">Ord Valuation Red Flag Code</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationRedFlagCode }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationRedFlagDesc">Ord Valuation Red Flag Desc</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationRedFlagDesc }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordValuationAmcAppraisalId">Ord Valuation Amc Appraisal Id</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordValuationAmcAppraisalId }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4">
+                    <div class="card order-card">
+                        <div class="card-header">
+                            <span>UCDP Deatils</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpDataFnmaSubmitToUcdpInd">Ord Ucdp Data Fnma Submit To Ucdp Ind</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpDataFnmaSubmitToUcdpInd }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpDataFnmaServicerNbr">Ord Ucdp Data Fnma Servicer Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpDataFnmaServicerNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpDataFhlmcSubmitToUcdpInd">Ord Ucdp Data Fhlmc Submit To Ucdp Ind</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpDataFhlmcSubmitToUcdpInd }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpDataFhlmcIdentificationNbr">Ord Ucdp Data Fhlmc Identification Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpDataFhlmcIdentificationNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpDataUcdpBussinessUnitNbr">Ord Ucdp Data Ucdp Bussiness Unit Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpDataUcdpBussinessUnitNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpSdFnamaDocumentId">Ord Ucdp Sd Fnama Document Id</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpSdFnamaDocumentId }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpSdFnmaSubmissionStatusId">Ord Ucdp Sd Fnma Submission Status Id</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpSdFnmaSubmissionStatusId }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpSdFhlmcDocumentFileCd">Ord Ucdp Sd Fhlmc Document File Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpSdFhlmcDocumentFileCd }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpSdEadSubmissionStatusCd">Ord Ucdp Sd Ead Submission Status Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpSdEadSubmissionStatusCd }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordUcdpFinalSubmissionDt">Ord Ucdp Final Submission Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordUcdpFinalSubmissionDt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4">
+                    <div class="card order-card">
+                        <div class="card-header">
+                            <span>Review Deatils</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrStatusCd">Ord Request Rr Status Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrStatusCd }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrVendorAppraisalId">Ord Request Rr Vendor Appraisal Id</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrVendorAppraisalId }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrvendorAppraisalDraftRcvdDt">Ord Request Rrvendor Appraisal Draft Rcvd Dt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrvendorAppraisalDraftRcvdDt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrXmlFormId">Ord Request Rr Xml Form Id</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrXmlFormId }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrPdfFormId">Ord Request Rr Pdf Form Id</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrPdfFormId }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrApprFileDataSourcCd">Ord Request Rr Appr File Data Sourc Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrApprFileDataSourcCd }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrReportValueAmt">Ord Request Rr Report Value Amt</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrReportValueAmt }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrAppraisalCompanyName">Ord Request Rr Appraisal Company Name</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrAppraisalCompanyName }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrvendorName">Ord Request Rrvendor Name</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrvendorName }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrvendorLicenseNbr">Ord Request Rrvendor License Nbr</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrvendorLicenseNbr }}</span>
+                                    </dd>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dt><span jhiTranslate="revalApp.orders.ordRequestRrvendorLicenseStateCd">Ord Request Rrvendor License State Cd</span></dt>
+                                </div>
+                                <div class="col-md-6">
+                                    <dd>
+                                        <span>{{ orders.ordRequestRrvendorLicenseStateCd }}</span>
+                                    </dd>
+                                </div>
+                            </div>     
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <!-- <dl class="row-md jh-entity-details">
+                
+                
+            </dl> -->
 
             <button type="submit"
                     (click)="previousState()"

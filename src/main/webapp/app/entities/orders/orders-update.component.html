@@ -5,251 +5,257 @@
             
             <div>
                 <jhi-alert-error></jhi-alert-error>
-                <ngb-tabset [destroyOnHide]="false">
-                    <ngb-tab>
-                        <ng-template ngbTabTitle><b>Order Details</b></ng-template>
-                        <ng-template ngbTabContent>
-                            <div class="row">
-                                <div class="form-group col-md-4" [hidden]="!editForm.get('id')!.value">
-                                    <label for="id" jhiTranslate="global.field.id">ID</label>
-                                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
-                                </div>
-
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordNumber" for="field_ordNumber">Ord Number</label>
-                                    <input type="text" class="form-control" name="ordNumber" id="field_ordNumber"
-                                        formControlName="ordNumber"/>
-                                    <div *ngIf="editForm.get('ordNumber')!.invalid && (editForm.get('ordNumber')!.dirty || editForm.get('ordNumber')!.touched)">
-                                        <small class="form-text text-danger"
-                                            *ngIf="editForm.get('ordNumber')?.errors?.required" jhiTranslate="entity.validation.required">
-                                        This field is required.
-                                        </small>
-                                        <small class="form-text text-danger"
-                                            *ngIf="editForm.get('ordNumber')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
-                                        This field cannot be longer than 30 characters.
-                                        </small>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <span>Order Details</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="form-group col-md-4" [hidden]="!editForm.get('id')!.value">
+                                        <label for="id" jhiTranslate="global.field.id">ID</label>
+                                        <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
                                     </div>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrgOrderStatusCd" for="field_ordOrgOrderStatusCd">Ord Org Order Status Cd</label>
-                                    <input type="text" class="form-control" name="ordOrgOrderStatusCd" id="field_ordOrgOrderStatusCd"
-                                           formControlName="ordOrgOrderStatusCd"/>
-                                    <div *ngIf="editForm.get('ordOrgOrderStatusCd')!.invalid && (editForm.get('ordOrgOrderStatusCd')!.dirty || editForm.get('ordOrgOrderStatusCd')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordOrgOrderStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
-                                        This field is required.
-                                        </small>
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordOrgOrderStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
-                                        This field cannot be longer than 30 characters.
-                                        </small>
+    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordNumber" for="field_ordNumber">Ord Number</label>
+                                        <input type="text" class="form-control" name="ordNumber" id="field_ordNumber"
+                                            formControlName="ordNumber"/>
+                                        <div *ngIf="editForm.get('ordNumber')!.invalid && (editForm.get('ordNumber')!.dirty || editForm.get('ordNumber')!.touched)">
+                                            <small class="form-text text-danger"
+                                                *ngIf="editForm.get('ordNumber')?.errors?.required" jhiTranslate="entity.validation.required">
+                                            This field is required.
+                                            </small>
+                                            <small class="form-text text-danger"
+                                                *ngIf="editForm.get('ordNumber')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                                            This field cannot be longer than 30 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordCmpOrderStatusCd" for="field_ordCmpOrderStatusCd">Ord Cmp Order Status Cd</label>
-                                    <input type="text" class="form-control" name="ordCmpOrderStatusCd" id="field_ordCmpOrderStatusCd"
-                                           formControlName="ordCmpOrderStatusCd"/>
-                                    <div *ngIf="editForm.get('ordCmpOrderStatusCd')!.invalid && (editForm.get('ordCmpOrderStatusCd')!.dirty || editForm.get('ordCmpOrderStatusCd')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordCmpOrderStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
-                                        This field is required.
-                                        </small>
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordCmpOrderStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
-                                        This field cannot be longer than 30 characters.
-                                        </small>
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrgOrderStatusCd" for="field_ordOrgOrderStatusCd">Ord Org Order Status Cd</label>
+                                        <input type="text" class="form-control" name="ordOrgOrderStatusCd" id="field_ordOrgOrderStatusCd"
+                                               formControlName="ordOrgOrderStatusCd"/>
+                                        <div *ngIf="editForm.get('ordOrgOrderStatusCd')!.invalid && (editForm.get('ordOrgOrderStatusCd')!.dirty || editForm.get('ordOrgOrderStatusCd')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordOrgOrderStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                                            This field is required.
+                                            </small>
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordOrgOrderStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                                            This field cannot be longer than 30 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordProOrderStatusCd" for="field_ordProOrderStatusCd">Ord Pro Order Status Cd</label>
-                                    <input type="text" class="form-control" name="ordProOrderStatusCd" id="field_ordProOrderStatusCd"
-                                           formControlName="ordProOrderStatusCd"/>
-                                    <div *ngIf="editForm.get('ordProOrderStatusCd')!.invalid && (editForm.get('ordProOrderStatusCd')!.dirty || editForm.get('ordProOrderStatusCd')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordProOrderStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
-                                        This field is required.
-                                        </small>
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordProOrderStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
-                                        This field cannot be longer than 30 characters.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordCmpOrderStatusCd" for="field_ordCmpOrderStatusCd">Ord Cmp Order Status Cd</label>
+                                        <input type="text" class="form-control" name="ordCmpOrderStatusCd" id="field_ordCmpOrderStatusCd"
+                                               formControlName="ordCmpOrderStatusCd"/>
+                                        <div *ngIf="editForm.get('ordCmpOrderStatusCd')!.invalid && (editForm.get('ordCmpOrderStatusCd')!.dirty || editForm.get('ordCmpOrderStatusCd')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordCmpOrderStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                                            This field is required.
+                                            </small>
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordCmpOrderStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                                            This field cannot be longer than 30 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordCmpNbr" for="field_ordCmpNbr">Ord Cmp Nbr</label>
-                                    <input type="text" class="form-control" name="ordCmpNbr" id="field_ordCmpNbr"
-                                           formControlName="ordCmpNbr"/>
-                                    <div *ngIf="editForm.get('ordCmpNbr')!.invalid && (editForm.get('ordCmpNbr')!.dirty || editForm.get('ordCmpNbr')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordCmpNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
-                                        This field cannot be longer than 30 characters.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordProOrderStatusCd" for="field_ordProOrderStatusCd">Ord Pro Order Status Cd</label>
+                                        <input type="text" class="form-control" name="ordProOrderStatusCd" id="field_ordProOrderStatusCd"
+                                               formControlName="ordProOrderStatusCd"/>
+                                        <div *ngIf="editForm.get('ordProOrderStatusCd')!.invalid && (editForm.get('ordProOrderStatusCd')!.dirty || editForm.get('ordProOrderStatusCd')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordProOrderStatusCd')?.errors?.required" jhiTranslate="entity.validation.required">
+                                            This field is required.
+                                            </small>
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordProOrderStatusCd')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                                            This field cannot be longer than 30 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordBrnNbr" for="field_ordBrnNbr">Ord Brn Nbr</label>
-                                    <input type="text" class="form-control" name="ordBrnNbr" id="field_ordBrnNbr"
-                                           formControlName="ordBrnNbr"/>
-                                    <div *ngIf="editForm.get('ordBrnNbr')!.invalid && (editForm.get('ordBrnNbr')!.dirty || editForm.get('ordBrnNbr')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordBrnNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
-                                        This field cannot be longer than 30 characters.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordCmpNbr" for="field_ordCmpNbr">Ord Cmp Nbr</label>
+                                        <input type="text" class="form-control" name="ordCmpNbr" id="field_ordCmpNbr"
+                                               formControlName="ordCmpNbr"/>
+                                        <div *ngIf="editForm.get('ordCmpNbr')!.invalid && (editForm.get('ordCmpNbr')!.dirty || editForm.get('ordCmpNbr')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordCmpNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                                            This field cannot be longer than 30 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordProNbr" for="field_ordProNbr">Ord Pro Nbr</label>
-                                    <input type="text" class="form-control" name="ordProNbr" id="field_ordProNbr"
-                                           formControlName="ordProNbr"/>
-                                    <div *ngIf="editForm.get('ordProNbr')!.invalid && (editForm.get('ordProNbr')!.dirty || editForm.get('ordProNbr')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordProNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
-                                        This field cannot be longer than 30 characters.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordBrnNbr" for="field_ordBrnNbr">Ord Brn Nbr</label>
+                                        <input type="text" class="form-control" name="ordBrnNbr" id="field_ordBrnNbr"
+                                               formControlName="ordBrnNbr"/>
+                                        <div *ngIf="editForm.get('ordBrnNbr')!.invalid && (editForm.get('ordBrnNbr')!.dirty || editForm.get('ordBrnNbr')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordBrnNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                                            This field cannot be longer than 30 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordProductCode" for="field_ordProductCode">Ord Product Code</label>
-                                    <input type="text" class="form-control" name="ordProductCode" id="field_ordProductCode"
-                                           formControlName="ordProductCode"/>
-                                    <div *ngIf="editForm.get('ordProductCode')!.invalid && (editForm.get('ordProductCode')!.dirty || editForm.get('ordProductCode')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordProductCode')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
-                                        This field cannot be longer than 30 characters.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordProNbr" for="field_ordProNbr">Ord Pro Nbr</label>
+                                        <input type="text" class="form-control" name="ordProNbr" id="field_ordProNbr"
+                                               formControlName="ordProNbr"/>
+                                        <div *ngIf="editForm.get('ordProNbr')!.invalid && (editForm.get('ordProNbr')!.dirty || editForm.get('ordProNbr')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordProNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                                            This field cannot be longer than 30 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordOriginalValueAmt" for="field_ordOriginalValueAmt">Ord Original Value Amt</label>
-                                    <input type="number" class="form-control" name="ordOriginalValueAmt" id="field_ordOriginalValueAmt"
-                                           formControlName="ordOriginalValueAmt"/>
-                                    <div *ngIf="editForm.get('ordOriginalValueAmt')!.invalid && (editForm.get('ordOriginalValueAmt')!.dirty || editForm.get('ordOriginalValueAmt')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordOriginalValueAmt')?.errors?.required" jhiTranslate="entity.validation.required">
-                                        This field is required.
-                                        </small>
-                                        <small class="form-text text-danger"
-                                            [hidden]="!editForm.get('ordOriginalValueAmt')?.errors?.number" jhiTranslate="entity.validation.number">
-                                            This field should be a number.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordProductCode" for="field_ordProductCode">Ord Product Code</label>
+                                        <input type="text" class="form-control" name="ordProductCode" id="field_ordProductCode"
+                                               formControlName="ordProductCode"/>
+                                        <div *ngIf="editForm.get('ordProductCode')!.invalid && (editForm.get('ordProductCode')!.dirty || editForm.get('ordProductCode')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordProductCode')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                                            This field cannot be longer than 30 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordParentTrackingNbr" for="field_ordParentTrackingNbr">Ord Parent Tracking Nbr</label>
-                                    <input type="text" class="form-control" name="ordParentTrackingNbr" id="field_ordParentTrackingNbr"
-                                           formControlName="ordParentTrackingNbr"/>
-                                    <div *ngIf="editForm.get('ordParentTrackingNbr')!.invalid && (editForm.get('ordParentTrackingNbr')!.dirty || editForm.get('ordParentTrackingNbr')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordParentTrackingNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 50 }">
-                                        This field cannot be longer than 50 characters.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordOriginalValueAmt" for="field_ordOriginalValueAmt">Ord Original Value Amt</label>
+                                        <input type="number" class="form-control" name="ordOriginalValueAmt" id="field_ordOriginalValueAmt"
+                                               formControlName="ordOriginalValueAmt"/>
+                                        <div *ngIf="editForm.get('ordOriginalValueAmt')!.invalid && (editForm.get('ordOriginalValueAmt')!.dirty || editForm.get('ordOriginalValueAmt')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordOriginalValueAmt')?.errors?.required" jhiTranslate="entity.validation.required">
+                                            This field is required.
+                                            </small>
+                                            <small class="form-text text-danger"
+                                                [hidden]="!editForm.get('ordOriginalValueAmt')?.errors?.number" jhiTranslate="entity.validation.number">
+                                                This field should be a number.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordUserNbr" for="field_ordUserNbr">Ord User Nbr</label>
-                                    <input type="text" class="form-control" name="ordUserNbr" id="field_ordUserNbr"
-                                           formControlName="ordUserNbr"/>
-                                    <div *ngIf="editForm.get('ordUserNbr')!.invalid && (editForm.get('ordUserNbr')!.dirty || editForm.get('ordUserNbr')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordUserNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
-                                        This field cannot be longer than 30 characters.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordParentTrackingNbr" for="field_ordParentTrackingNbr">Ord Parent Tracking Nbr</label>
+                                        <input type="text" class="form-control" name="ordParentTrackingNbr" id="field_ordParentTrackingNbr"
+                                               formControlName="ordParentTrackingNbr"/>
+                                        <div *ngIf="editForm.get('ordParentTrackingNbr')!.invalid && (editForm.get('ordParentTrackingNbr')!.dirty || editForm.get('ordParentTrackingNbr')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordParentTrackingNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 50 }">
+                                            This field cannot be longer than 50 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrderDt" for="field_ordOrderDt">Ord Order Dt</label>
-                                    <div class="input-group">
-                                        <input id="field_ordOrderDt" type="text" class="form-control" name="ordOrderDt" ngbDatepicker #ordOrderDtDp="ngbDatepicker" formControlName="ordOrderDt"/>
-                                        <span class="input-group-append">
-                                            <button type="button" class="btn btn-secondary" (click)="ordOrderDtDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
-                                        </span>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordUserNbr" for="field_ordUserNbr">Ord User Nbr</label>
+                                        <input type="text" class="form-control" name="ordUserNbr" id="field_ordUserNbr"
+                                               formControlName="ordUserNbr"/>
+                                        <div *ngIf="editForm.get('ordUserNbr')!.invalid && (editForm.get('ordUserNbr')!.dirty || editForm.get('ordUserNbr')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordUserNbr')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 30 }">
+                                            This field cannot be longer than 30 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                    <div *ngIf="editForm.get('ordOrderDt')!.invalid && (editForm.get('ordOrderDt')!.dirty || editForm.get('ordOrderDt')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordOrderDt')?.errors?.required" jhiTranslate="entity.validation.required">
-                                        This field is required.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrderDt" for="field_ordOrderDt">Ord Order Dt</label>
+                                        <div class="input-group">
+                                            <input id="field_ordOrderDt" type="text" class="form-control" name="ordOrderDt" ngbDatepicker #ordOrderDtDp="ngbDatepicker" formControlName="ordOrderDt"/>
+                                            <span class="input-group-append">
+                                                <button type="button" class="btn btn-secondary" (click)="ordOrderDtDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                                            </span>
+                                        </div>
+                                        <div *ngIf="editForm.get('ordOrderDt')!.invalid && (editForm.get('ordOrderDt')!.dirty || editForm.get('ordOrderDt')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordOrderDt')?.errors?.required" jhiTranslate="entity.validation.required">
+                                            This field is required.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordRushRequestDueDt" for="field_ordRushRequestDueDt">Ord Rush Request Due Dt</label>
-                                    <div class="input-group">
-                                        <input id="field_ordRushRequestDueDt" type="text" class="form-control" name="ordRushRequestDueDt" ngbDatepicker #ordRushRequestDueDtDp="ngbDatepicker" formControlName="ordRushRequestDueDt"/>
-                                        <span class="input-group-append">
-                                            <button type="button" class="btn btn-secondary" (click)="ordRushRequestDueDtDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
-                                        </span>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordRushRequestDueDt" for="field_ordRushRequestDueDt">Ord Rush Request Due Dt</label>
+                                        <div class="input-group">
+                                            <input id="field_ordRushRequestDueDt" type="text" class="form-control" name="ordRushRequestDueDt" ngbDatepicker #ordRushRequestDueDtDp="ngbDatepicker" formControlName="ordRushRequestDueDt"/>
+                                            <span class="input-group-append">
+                                                <button type="button" class="btn btn-secondary" (click)="ordRushRequestDueDtDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrgInstructions" for="field_ordOrgInstructions">Ord Org Instructions</label>
-                                    <input type="text" class="form-control" name="ordOrgInstructions" id="field_ordOrgInstructions"
-                                           formControlName="ordOrgInstructions"/>
-                                    <div *ngIf="editForm.get('ordOrgInstructions')!.invalid && (editForm.get('ordOrgInstructions')!.dirty || editForm.get('ordOrgInstructions')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordOrgInstructions')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 240 }">
-                                        This field cannot be longer than 240 characters.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrgInstructions" for="field_ordOrgInstructions">Ord Org Instructions</label>
+                                        <input type="text" class="form-control" name="ordOrgInstructions" id="field_ordOrgInstructions"
+                                               formControlName="ordOrgInstructions"/>
+                                        <div *ngIf="editForm.get('ordOrgInstructions')!.invalid && (editForm.get('ordOrgInstructions')!.dirty || editForm.get('ordOrgInstructions')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordOrgInstructions')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 240 }">
+                                            This field cannot be longer than 240 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrgOtherInstructions" for="field_ordOrgOtherInstructions">Ord Org Other Instructions</label>
-                                    <input type="text" class="form-control" name="ordOrgOtherInstructions" id="field_ordOrgOtherInstructions"
-                                           formControlName="ordOrgOtherInstructions"/>
-                                    <div *ngIf="editForm.get('ordOrgOtherInstructions')!.invalid && (editForm.get('ordOrgOtherInstructions')!.dirty || editForm.get('ordOrgOtherInstructions')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordOrgOtherInstructions')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 240 }">
-                                        This field cannot be longer than 240 characters.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrgOtherInstructions" for="field_ordOrgOtherInstructions">Ord Org Other Instructions</label>
+                                        <input type="text" class="form-control" name="ordOrgOtherInstructions" id="field_ordOrgOtherInstructions"
+                                               formControlName="ordOrgOtherInstructions"/>
+                                        <div *ngIf="editForm.get('ordOrgOtherInstructions')!.invalid && (editForm.get('ordOrgOtherInstructions')!.dirty || editForm.get('ordOrgOtherInstructions')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordOrgOtherInstructions')?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" [translateValues]="{ max: 240 }">
+                                            This field cannot be longer than 240 characters.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordMultiOrderInd" for="field_ordMultiOrderInd">Ord Multi Order Ind</label>
-                                    <input type="checkbox" class="form-control" name="ordMultiOrderInd" id="field_ordMultiOrderInd"
-                                           formControlName="ordMultiOrderInd"/>
-                                    <div *ngIf="editForm.get('ordMultiOrderInd')!.invalid && (editForm.get('ordMultiOrderInd')!.dirty || editForm.get('ordMultiOrderInd')!.touched)">
-                                        <small class="form-text text-danger"
-                                               *ngIf="editForm.get('ordMultiOrderInd')?.errors?.required" jhiTranslate="entity.validation.required">
-                                        This field is required.
-                                        </small>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordMultiOrderInd" for="field_ordMultiOrderInd">Ord Multi Order Ind</label>
+                                        <input type="checkbox" class="form-control" name="ordMultiOrderInd" id="field_ordMultiOrderInd"
+                                               formControlName="ordMultiOrderInd"/>
+                                        <div *ngIf="editForm.get('ordMultiOrderInd')!.invalid && (editForm.get('ordMultiOrderInd')!.dirty || editForm.get('ordMultiOrderInd')!.touched)">
+                                            <small class="form-text text-danger"
+                                                   *ngIf="editForm.get('ordMultiOrderInd')?.errors?.required" jhiTranslate="entity.validation.required">
+                                            This field is required.
+                                            </small>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrgDuedate" for="field_ordOrgDuedate">Ord Org Duedate</label>
-                                    <div class="input-group">
-                                        <input id="field_ordOrgDuedate" type="text" class="form-control" name="ordOrgDuedate" ngbDatepicker #ordOrgDuedateDp="ngbDatepicker" formControlName="ordOrgDuedate"/>
-                                        <span class="input-group-append">
-                                            <button type="button" class="btn btn-secondary" (click)="ordOrgDuedateDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
-                                        </span>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordOrgDuedate" for="field_ordOrgDuedate">Ord Org Duedate</label>
+                                        <div class="input-group">
+                                            <input id="field_ordOrgDuedate" type="text" class="form-control" name="ordOrgDuedate" ngbDatepicker #ordOrgDuedateDp="ngbDatepicker" formControlName="ordOrgDuedate"/>
+                                            <span class="input-group-append">
+                                                <button type="button" class="btn btn-secondary" (click)="ordOrgDuedateDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
-                
-                                <div class="form-group col-md-4">
-                                    <label class="form-control-label" jhiTranslate="revalApp.orders.ordProDuedate" for="field_ordProDuedate">Ord Pro Duedate</label>
-                                    <div class="input-group">
-                                        <input id="field_ordProDuedate" type="text" class="form-control" name="ordProDuedate" ngbDatepicker #ordProDuedateDp="ngbDatepicker" formControlName="ordProDuedate"/>
-                                        <span class="input-group-append">
-                                            <button type="button" class="btn btn-secondary" (click)="ordProDuedateDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
-                                        </span>
+                    
+                                    <div class="form-group col-md-4">
+                                        <label class="form-control-label" jhiTranslate="revalApp.orders.ordProDuedate" for="field_ordProDuedate">Ord Pro Duedate</label>
+                                        <div class="input-group">
+                                            <input id="field_ordProDuedate" type="text" class="form-control" name="ordProDuedate" ngbDatepicker #ordProDuedateDp="ngbDatepicker" formControlName="ordProDuedate"/>
+                                            <span class="input-group-append">
+                                                <button type="button" class="btn btn-secondary" (click)="ordProDuedateDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </ng-template>
-                    </ngb-tab>
+                        </div>
+                    </div>
+                </div>
+                <ngb-tabset [destroyOnHide]="false">
                     <ngb-tab>
                         <ng-template ngbTabTitle><b>Customer</b></ng-template>
                         <ng-template ngbTabContent>
